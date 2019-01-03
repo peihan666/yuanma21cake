@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>导航页</title>
+		 <link rel="stylesheet" type="text/css" href="css/index.min.css"/>
+		 <link rel="stylesheet" type="text/css" href="css/_tool.css"/>
+		 <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		 <script src="js/index.min.js" type="text/javascript" ></script>
+		 <script scr="js/function.js" type="text/javascript" charset="utf-8"></script>  		
+		
+     
+	
+	</head>
+	<body>
+		<div class="header-box">
+			<div class="header">
+	 		   <div class="header-nav">
+	     			   <a class="header-logo" href="http://127.0.0.1/yuanma21cake/gulp21cake/dist/index.html?__hbt=1546488789006">
+      				  <img src="img/logo.png" alt="21cake logo" />        
+       				 </a>
+       			 <ul class="nav-box">
+           			 <li><a href="http://127.0.0.1/yuanma21cake/gulp21cake/dist/index.html?__hbt=1546488789006" >首页</a></li>
+	                            <li><a href="http://127.0.0.1/yuanma21cake/gulp21cake/dist/nav.html?__hbt=1546416813834" target="_self">蛋糕</a></li>
+	                            <li><a href="" target="_self">面包</a></li>
+	                            <li><a href="" target="_self">冰淇淋</a></li>
+	                            <li><a href="" target="_self">咖啡下午茶</a></li>
+	                            <li><a href="" target="_self">咖啡全国送</a></li>
+	                            <li><a href="" target="_self">企业专区</a></li>
+                   	 </ul>
+				   <div class="right-city-user">
+	<a class="header-app app-download" data-id="app-list" name="app_download">APP下载</a>
+	<div class="current-city" data-id="current-city">
+		深圳<i></i>
+	</div>
+	<a class="header-message" data-id="messageList" href="#">消息</a>
+	<span class="not-login"><a href="http://127.0.0.1/yuanma21cake/gulp21cake/dist/setin.html?__hbt=1546436329948">登录</a>/<a href="http://127.0.0.1/yuanma21cake/gulp21cake/dist/setup.html?__hbt=1546487195661">注册</a></span>
+	<a href="http://127.0.0.1/yuanma21cake/gulp21cake/dist/car.html?__hbt=1546485246286" class="header-cart" id="cart-count-icon">
+	<i></i>
+	</a>
+	<ul class="current-city-list header-select" id="current-city" style="display: none; height: 174px; padding-top: 12px; margin-top: 0px; padding-bottom: 12px; margin-bottom: 0px;">
+		<li><a href="#" class="city-id-1" data-json="{&quot;id&quot;:&quot;1&quot;,&quot;name&quot;:&quot;\u4e0a\u6d77&quot;,&quot;region_id&quot;:&quot;22&quot;}">上海</a></li>
+		<li><a href="#" class="city-id-2" data-json="{&quot;id&quot;:&quot;2&quot;,&quot;name&quot;:&quot;\u5317\u4eac&quot;,&quot;region_id&quot;:&quot;2&quot;}">北京</a></li>
+		<li><a href="#" class="city-id-3" data-json="{&quot;id&quot;:&quot;3&quot;,&quot;name&quot;:&quot;\u5929\u6d25&quot;,&quot;region_id&quot;:&quot;43&quot;}">天津</a></li>
+		<li><a href="#" class="city-id-4" data-json="{&quot;id&quot;:&quot;4&quot;,&quot;name&quot;:&quot;\u676d\u5dde&quot;,&quot;region_id&quot;:&quot;3134&quot;}">杭州</a></li>
+		<li><a href="#" class="city-id-5" data-json="{&quot;id&quot;:&quot;5&quot;,&quot;name&quot;:&quot;\u65e0\u9521&quot;,&quot;region_id&quot;:&quot;1717&quot;}">无锡</a></li>
+		<li><a href="#" class="city-id-6" data-json="{&quot;id&quot;:&quot;6&quot;,&quot;name&quot;:&quot;\u82cf\u5dde&quot;,&quot;region_id&quot;:&quot;1692&quot;}">苏州</a></li>
+		<li><a href="#" class="city-id-7" data-json="{&quot;id&quot;:&quot;7&quot;,&quot;name&quot;:&quot;\u5e7f\u5dde&quot;,&quot;region_id&quot;:&quot;424&quot;}">广州</a></li>
+		<li><a href="#" class="city-id-8" data-json="{&quot;id&quot;:&quot;8&quot;,&quot;name&quot;:&quot;\u6df1\u5733&quot;,&quot;region_id&quot;:&quot;524&quot;}" style="display: none;">深圳</a></li>
+	</ul>
+	
+	<ul class="message-list-header header-select" id="messageList" style="display: none; height: 54px; padding-top: 12px; margin-top: 0px; padding-bottom: 12px; margin-bottom: 0px;">
+		<li><a href="#" target="_blank">通知</a></li>
+		<li><a href="#" target="_blank">物流</a></li>
+	</ul>
+	<dl class="app-list header-select" id="app-list" style="display: none; height: 115px; padding-top: 10px; margin-top: 0px; padding-bottom: 10px; margin-bottom: 0px;">
+		<dt>
+		<img src="img/appma.png" alt="下载APP">
+
+		</dt>
+		<dd>下载享更多优惠</dd>
+	</dl>
+</div>  	 
+    				</div>
+			</div>
+		</div>
+<script type="text/javascript">
+    $(".header-app").hover(function(){
+        $('.app-list').show().find('dl').animate({height:0}, 115);
+    },function(){
+        $('.app-list').hide().find('dl').animate({height:115}, 0);
+    });
+     $(".current-city").hover(function(){
+        $('.current-city-list').show().find('ul').animate({top:0}, 65);
+    },function(){
+        $('.current-city-list').hide().find('ul').css('top','100%');
+    })
+     $(".header-message").hover(function(){
+        $('.message-list-header').show().find('ul').animate({top:0}, 65);
+    },function(){
+        $('.message-list-header').hide().find('ul').css('top','100%');
+    })
+    
+     
+</script>
+<!--中间导航-->	
+<div class="content-box">
+	<div class="top-load-p" id="list-loading" style="display: none;">
+		加载中……
+	</div>
+	<div class="pro-list-content">
+		<div class="pro-list-filter" style="">
+			<dl class="cat-list">
+				<dt>分类：</dt>
+				<dd class=""><a href="#">全部分类</a></dd><dd class="sub-cat sub-cat-2-3-4-5-6-20-49-18-74-75 active"><a data-ids="2,3,4,5,6,20,49,18,74,75">蛋糕</a></dd><dd class="sub-cat sub-cat-29-61"><a data-ids="29,61">冰淇淋</a></dd><dd class="sub-cat sub-cat-35-37"><a data-ids="35,37">咖啡下午茶</a></dd><dd class="sub-cat sub-cat-36"><a data-ids="36">常温蛋糕</a></dd><dd class="sub-cat sub-cat-52"><a data-ids="52">设计师礼品</a></dd><dd class="sub-cat sub-cat-81-80-79-78-77"><a data-ids="81,80,79,78,77">面包</a></dd>
+			</dl>
+			<dl class="tag-list">
+				<dt>口味：</dt>
+				<dd class="active tag-title"><a href="#">全部口味</a></dd><dd class="sub-tag sub-tag-1"><a data-id="1">乳脂奶油</a></dd><dd class="sub-tag sub-tag-2"><a data-id="2">慕斯</a></dd><dd class="sub-tag sub-tag-3"><a data-id="3">乳酪</a></dd><dd class="sub-tag sub-tag-5"><a data-id="5">巧克力</a></dd><dd class="sub-tag sub-tag-6"><a data-id="6">坚果</a></dd><dd class="sub-tag sub-tag-7"><a data-id="7">水果</a></dd><dd class="sub-tag sub-tag-8"><a data-id="8">含酒</a></dd><dd class="sub-tag sub-tag-9"><a data-id="9">咖啡</a></dd><dd class="sub-tag sub-tag-4"><a data-id="4">冰淇淋</a></dd>
+			</dl>
+		</div>
+		<div class="pro-list-box" style="">
+			<ul class="pro-list-pr">
+				<li id="list-goods-13">
+				<div class="pro-list-su">
+					<a href="http://127.0.0.1/yuanma21cake/gulp21cake/dist/xiangqing.html?__hbt=1546485879062" target="_blank" class="goods-list"><img src="img/img3.jpg" data-original="img/img3.jpg" class="lazy" alt="草莓奶油蛋糕" style="display: inline;">
+					<h3>草莓奶油蛋糕</h3>
+					<span>¥228.00/2.0磅</span></a>
+					<div class="label-entrance">
+						<a href="#">情侣 &gt;</a><a href="#">人气 &gt;</a>
+					</div>
+					<a href="#" name="pro-list-addcart_13" class="pro-list-addcart" data-id="13"><i></i>加入购物车</a>
+					<div class="label">
+						<img src="img/label2.png">
+					</div>
+				</div>
+				<div class="pro-specifications" data-id="13">
+				</div>
+				</li>
+				
+				<li id="list-goods-17">
+				<div class="pro-list-su">
+					<a href="#" target="_blank" class="goods-list"><img src="img/img2.jpg" data-original="img/img2.jpg" class="lazy" alt="黑白巧克力慕斯" style="display: inline;">
+					<h3>黑白巧克力慕斯</h3>
+					<span>¥298.00/2.0磅</span></a>
+					<div class="label-entrance">
+						<a href="#">聚会 &gt;</a><a href="#">生日 &gt;</a><a href="#">人气 &gt;</a>
+					</div>
+					<a href="#" name="pro-list-addcart_17" class="pro-list-addcart" data-id="17"><i></i>加入购物车</a>
+					<div class="label">
+						<img src="img/label3.png">
+					</div>
+				</div>
+				<div class="pro-specifications" data-id="17">
+				</div>
+				</li>
+				<li id="list-goods-1">
+				<div class="pro-list-su">
+					<a href="#" target="_blank" class="goods-list"><img src="img/img4.jpg" data-original="img/img4.jpg" class="lazy" alt="朗姆芝士" style="display: inline;">
+					<h3>朗姆芝士</h3>
+					<span>¥298.00/2.0磅</span></a>
+					<div class="label-entrance">
+						<a href="#">情侣 &gt;</a><a href="#">白色情人节 &gt;</a><a href="#">生日 &gt;</a>
+					</div>
+					<a href="#" name="pro-list-addcart_1" class="pro-list-addcart" data-id="1"><i></i>加入购物车</a>
+					<div class="label">
+						<img src="img/label3.png">
+					</div>
+				</div>
+				<div class="pro-specifications" data-id="1">
+				</div>
+				</li>
+				
+				<li id="list-goods-12">
+				<div class="pro-list-su">
+					<a href="#" target="_blank" class="goods-list"><img src="img/img1.jpg" data-original="img/img1.jpg" class="lazy" alt="百利甜情人" style="display: inline;">
+					<h3>百利甜情人</h3>
+					<span>¥298.00/2.0磅</span></a>
+					<div class="label-entrance">
+						<a href="#">情侣 &gt;</a><a href="#">人气 &gt;</a><a href="#">白色情人节 &gt;</a>
+					</div>
+					<a href="#" name="pro-list-addcart_12" class="pro-list-addcart" data-id="12"><i></i>加入购物车</a>
+					<div class="label">
+						<img src="img/label3.png">
+					</div>
+				</div>
+				<div class="pro-specifications" data-id="12">
+				</div>
+				</li>
+				<li id="list-goods-26">
+				<div class="pro-list-su">
+					<a href="#" target="_blank" class="goods-list"><img src="img/img6.jpg" data-original="img/img6.jpg" class="lazy" alt="平安夜" style="display: inline;">
+					<h3>平安夜</h3>
+					<span>¥328.00/2.0磅</span></a>
+					<div class="label-entrance">
+						<a href="#">情侣 &gt;</a><a href="#">聚会 &gt;</a><a href="#">新品 &gt;</a>
+					</div>
+					<a href="#" name="pro-list-addcart_26" class="pro-list-addcart" data-id="26"><i></i>加入购物车</a>
+					<div class="label">
+						<img src="img/label1.png">
+					</div>
+				</div>
+				<div class="pro-specifications" data-id="26">
+				</div>
+				</li>
+				<li id="list-goods-8">
+				<div class="pro-list-su">
+					<a href="#" target="_blank" class="goods-list"><img src="img/img5.jpg" data-original="img/img5.jpg" class="lazy" alt="黑森林" style="display: inline;">
+					<h3>黑森林</h3>
+					<span>¥398.00/2.0磅</span></a>
+					<div class="label-entrance">
+						<a href="#">情侣 &gt;</a><a href="#">人气 &gt;</a>
+					</div>
+					<a href="#" name="pro-list-addcart_8" class="pro-list-addcart" data-id="8"><i></i>加入购物车</a>
+					<div class="label">
+						<img src="img/label2.png">
+					</div>
+				</div>
+				<div class="pro-specifications" data-id="8">
+				</div>
+				</li>
+				<li id="list-goods-907">
+				<div class="pro-list-su">
+					<a href="#" target="_blank" class="goods-list"><img src="img/img7.jpg" data-original="img/img7.jpg" class="lazy" alt="小重组（迷迭香套组）" style="display: inline;">
+					<h3>小重组（迷迭香套组）</h3>
+					<span>¥298.00/160g</span></a>
+					<div class="label-entrance">
+						<a href="#">情侣 &gt;</a><a href="#">新品 &gt;</a><a href="#">聚会 &gt;</a>
+					</div>
+					<a href="#" name="pro-list-addcart_907" class="pro-list-addcart" data-id="907"><i></i>加入购物车</a>
+					<div class="label">
+						<img src="img/label1.png">
+					</div>
+				</div>
+				<div class="pro-specifications" data-id="907">
+				</div>
+				</li>
+				<li id="list-goods-906">
+				<div class="pro-list-su">
+					<a href="#" target="_blank" class="goods-list"><img src="img/img8.jpg" data-original="img/img8.jpg" class="lazy" alt="小重组（蓝莓套组）" style="display: inline;">
+					<h3>小重组（蓝莓套组）</h3>
+					<span>¥298.00/160g</span></a>
+					<div class="label-entrance">
+						<a href="#">情侣 &gt;</a><a href="#">聚会 &gt;</a><a href="#">新品 &gt;</a>
+					</div>
+					<a href="#" name="pro-list-addcart_906" class="pro-list-addcart" data-id="906"><i></i>加入购物车</a>
+					<div class="label">
+						<img src="img/label1.png">
+					</div>
+				</div>
+				<div class="pro-specifications" data-id="906">
+				</div>
+				</li>
+				<li id="list-goods-905">
+				<div class="pro-list-su">
+					<a href="#" target="_blank" class="goods-list"><img src="img/img9.jpg" data-original="img/img9.jpg" class="lazy" alt="小重组（树莓套组）" style="display: inline;">
+					<h3>小重组（树莓套组）</h3>
+					<span>¥298.00/160g</span></a>
+					<div class="label-entrance">
+						<a href="#">情侣 &gt;</a><a href="#">聚会 &gt;</a><a href="#">新品 &gt;</a>
+					</div>
+					<a href="#" name="pro-list-addcart_905" class="pro-list-addcart" data-id="905"><i></i>加入购物车</a>
+					<div class="label">
+						<img src="img/label1.png">
+					</div>
+				</div>
+				<div class="pro-specifications" data-id="905">
+				</div>
+				</li>
+				<li id="list-goods-827">
+				<div class="pro-list-su">
+					<a href="#" target="_blank" class="goods-list"><img src="img/img10.jpg" data-original="img/img10.jpg" class="lazy" alt="黑白巧克力慕斯（千阳号）" style="display: inline;">
+					<h3>黑白巧克力慕斯（千阳号）</h3>
+					<span>¥358.00/2.0磅</span></a>
+					<div class="label-entrance">
+						<a href="#">新品 &gt;</a><a href="#">儿童 &gt;</a>
+					</div>
+					<a href="#" name="pro-list-addcart_827" class="pro-list-addcart" data-id="827"><i></i>加入购物车</a>
+					<div class="label">
+						<img src="img/label1.png">
+					</div>
+				</div>
+				<div class="pro-specifications" data-id="827">
+				</div>
+				</li>
+				<li id="list-goods-9">
+				<div class="pro-list-su">
+					<a href="#" target="_blank" class="goods-list"><img src="img/img11.jpg" data-original="img/img11.jpg" class="lazy" alt="榴莲飘飘" style="display: inline;">
+					<h3>榴莲飘飘</h3>
+					<span>¥298.00/2.0磅</span></a>
+					<div class="label-entrance">
+						<a href="#">人气 &gt;</a><a href="#">生日 &gt;</a>
+					</div>
+					<a href="#" name="pro-list-addcart_9" class="pro-list-addcart" data-id="9"><i></i>加入购物车</a>
+					<div class="label">
+						<img src="img/label3.png">
+					</div>
+				</div>
+				<div class="pro-specifications" data-id="9">
+				</div>
+				</li>
+				<li id="list-goods-400">
+				<div class="pro-list-su">
+					<a href="#" target="_blank" class="goods-list"><img src="img/img12.jpg" data-original="img/img12.jpg" class="lazy" alt="（新）栗蓉暗香" style="display: inline;">
+					<h3>（新）栗蓉暗香</h3>
+					<span>¥298.00/2.0磅</span></a>
+					<div class="label-entrance">
+						<a href="#">儿童 &gt;</a><a href="#">聚会 &gt;</a><a href="#">长辈 &gt;</a>
+					</div>
+					<a href="#" name="pro-list-addcart_400" class="pro-list-addcart" data-id="400"><i></i>加入购物车</a>
+				</div>
+				<div class="pro-specifications" data-id="400">
+				</div>
+				</li>
+				<li id="list-goods-797">
+				<div class="pro-list-su">
+					<a href="#" target="_blank" class="goods-list"><img src="img/img13.jpg" data-original="img/img13.jpg" class="lazy" alt="松仁淡奶（木糖醇）" style="display: inline;">
+					<h3>松仁淡奶（木糖醇）</h3>
+					<span>¥298.00/2.0磅</span></a>
+					<div class="label-entrance">
+						<a href="#">长辈 &gt;</a><a href="#">新品 &gt;</a>
+					</div>
+					<a href="#" name="pro-list-addcart_797" class="pro-list-addcart" data-id="797"><i></i>加入购物车</a>
+					<div class="label">
+						<img src="img/label1.png">
+					</div>
+				</div>
+				<div class="pro-specifications" data-id="797">
+				</div>
+				</li>
+				<li id="list-goods-31">
+				<div class="pro-list-su">
+					<a href="#" target="_blank" class="goods-list"><img src="img/img14.jpg" data-original="img/img14.jpg" class="lazy" alt="冻慕斯与焗芝士" style="display: inline;">
+					<h3>冻慕斯与焗芝士</h3>
+					<span>¥298.00/2.0磅</span></a>
+					<div class="label-entrance">
+						<a href="#">情侣 &gt;</a><a href="#">低温 &gt;</a><a href="#">生日 &gt;</a>
+					</div>
+					<a href="#" name="pro-list-addcart_31" class="pro-list-addcart" data-id="31"><i></i>加入购物车</a>
+				</div>
+				<div class="pro-specifications" data-id="31">
+				</div>
+				</li>
+				<li id="list-goods-750">
+				<div class="pro-list-su">
+					<a href="#" target="_blank" class="goods-list"><img src="img/img15.jpg" data-original="img/img15.jpg" class="lazy" alt="浅草" style="display: inline;">
+					<h3>浅草</h3>
+					<span>¥298.00/2.0磅</span></a>
+					<div class="label-entrance">
+						<a href="#">新品 &gt;</a><a href="#">人气 &gt;</a><a href="#">生日 &gt;</a>
+					</div>
+					<a href="#" name="pro-list-addcart_750" class="pro-list-addcart" data-id="750"><i></i>加入购物车</a>
+					<div class="label">
+						<img src="img/label1.png">
+					</div>
+				</div>
+				<div class="pro-specifications" data-id="750">
+				</div>
+				</li>
+				<li id="list-goods-472">
+				<div class="pro-list-su">
+					<a href="#" target="_blank" class="goods-list"><img src="img/img16.jpg" data-original="img/img16.jpg" class="lazy" alt="芒果奶油蛋糕" style="display: inline;">
+					<h3>芒果奶油蛋糕</h3>
+					<span>¥198.00/2.0磅</span></a>
+					<div class="label-entrance">
+						<a href="#">情侣 &gt;</a><a href="#">儿童 &gt;</a><a href="#">聚会 &gt;</a>
+					</div>
+					<a href="#" name="pro-list-addcart_472" class="pro-list-addcart" data-id="472"><i></i>加入购物车</a>
+					<div class="label">
+						<img src="img/label4.png">
+					</div>
+				</div>
+				<div class="pro-specifications" data-id="472">
+				</div>
+				</li>
+				<li id="list-goods-55">
+				<div class="pro-list-su">
+					<a href="#" target="_blank" class="goods-list"><img src="img/img17.jpg" data-original="img/img17.jpg" class="lazy" alt="东方栗融" style="display: inline;">
+					<h3>东方栗融</h3>
+					<span>¥490.00/2.0磅</span></a>
+					<div class="label-entrance">
+						<a href="#">长辈 &gt;</a>
+					</div>
+					<a href="#" name="pro-list-addcart_55" class="pro-list-addcart" data-id="55"><i></i>加入购物车</a>
+				</div>
+				<div class="pro-specifications" data-id="55">
+				</div>
+				</li>
+				<li id="list-goods-6">
+				<div class="pro-list-su">
+					<a href="#" target="_blank" class="goods-list"><img src="img/img18.jpg" data-original="img/img18.jpg" class="lazy" alt="松仁淡奶" style="display: inline;">
+					<h3>松仁淡奶</h3>
+					<span>¥298.00/2.0磅</span></a>
+					<div class="label-entrance">
+						<a href="#">长辈 &gt;</a><a href="#">人气 &gt;</a>
+					</div>
+					<a href="#" name="pro-list-addcart_6" class="pro-list-addcart" data-id="6"><i></i>加入购物车</a>
+				</div>
+				<div class="pro-specifications" data-id="6">
+				</div>
+				</li>
+				<li id="list-goods-2">
+				<div class="pro-list-su">
+					<a href="#" target="_blank" class="goods-list"><img src="img/img19.jpg" data-original="img/img19.jpg" class="lazy" alt="布莱克" style="display: inline;">
+					<h3>布莱克</h3>
+					<span>¥298.00/2.0磅</span></a>
+					<div class="label-entrance">
+						<a href="#">一人份 &gt;</a><a href="#">人气 &gt;</a>
+					</div>
+					<a href="#" name="pro-list-addcart_2" class="pro-list-addcart" data-id="2"><i></i>加入购物车</a>
+					<div class="label">
+						<img src="img/label3.png">
+					</div>
+				</div>
+				<div class="pro-specifications" data-id="2">
+				</div>
+				</li>
+				<li id="list-goods-3">
+				<div class="pro-list-su">
+					<a href="#" target="_blank" class="goods-list"><img src="img/img20.jpg" data-original="img/img20.jpg" class="lazy" alt="核桃斯诺" style="display: inline;">
+					<h3>核桃斯诺</h3>
+					<span>¥298.00/2.0磅</span></a>
+					<div class="label-entrance">
+						<a href="#">长辈 &gt;</a><a href="#">年货买赠 &gt;</a>
+					</div>
+					<a href="#" name="pro-list-addcart_3" class="pro-list-addcart" data-id="3"><i></i>加入购物车</a>
+				</div>
+				<div class="pro-specifications" data-id="3">
+				</div>
+				</li>
+				<li id="list-goods-5">
+				<div class="pro-list-su">
+					<a href="#" target="_blank" class="goods-list"><img src="img/img21.jpg" data-original="img/img21.jpg" class="lazy" alt="布朗尼" style="display: inline;">
+					<h3>布朗尼</h3>
+					<span>¥298.00/2.0磅</span></a>
+					<div class="label-entrance">
+						<a href="#">情侣 &gt;</a><a href="#">年货买赠 &gt;</a>
+					</div>
+					<a href="#" name="pro-list-addcart_5" class="pro-list-addcart" data-id="5"><i></i>加入购物车</a>
+				</div>
+				<div class="pro-specifications" data-id="5">
+				</div>
+				</li>
+				<li id="list-goods-282">
+				<div class="pro-list-su">
+					<a href="#" target="_blank" class="goods-list"><img src="img/img22.jpg" data-original="img/img22.jpg" class="lazy" alt="摩卡" style="display: inline;">
+					<h3>摩卡</h3>
+					<span>¥398.00/2.0磅</span></a>
+					<div class="label-entrance">
+						<a href="#">一人份 &gt;</a><a href="#">新品 &gt;</a>
+					</div>
+					<a href="#" name="pro-list-addcart_282" class="pro-list-addcart" data-id="282"><i></i>加入购物车</a>
+				</div>
+				<div class="pro-specifications" data-id="282">
+				</div>
+				</li>
+				<li id="list-goods-631">
+				<div class="pro-list-su">
+					<a href="#" target="_blank" class="goods-list"><img src="img/img23.jpg" data-original="img/img23.jpg" class="lazy" alt="枣儿" style="display: inline;">
+					<h3>枣儿</h3>
+					<span>¥298.00/2.0磅</span></a>
+					<div class="label-entrance">
+						<a href="#">新品 &gt;</a><a href="#">生日 &gt;</a>
+					</div>
+					<a href="#" name="pro-list-addcart_631" class="pro-list-addcart" data-id="631"><i></i>加入购物车</a>
+					<div class="label">
+						<img src="img/label1.png">
+					</div>
+				</div>
+				<div class="pro-specifications" data-id="631">
+				</div>
+				</li>
+				<li id="list-goods-21">
+				<div class="pro-list-su">
+					<a href="#" target="_blank" class="goods-list"><img src="img/img24.jpg" data-original="img/img24.jpg" class="lazy" alt="芒果慕斯" style="display: inline;">
+					<h3>芒果慕斯</h3>
+					<span>¥298.00/2.0磅</span></a>
+					<div class="label-entrance">
+						<a href="#">儿童 &gt;</a><a href="#">聚会 &gt;</a><a href="#">新品 &gt;</a>
+					</div>
+					<a href="#" name="pro-list-addcart_21" class="pro-list-addcart" data-id="21"><i></i>加入购物车</a>
+					<div class="label">
+						<img src="img/label1.png">
+					</div>
+				</div>
+				<div class="pro-specifications" data-id="21">
+				</div>
+				</li>
+				<li id="list-goods-415">
+				<div class="pro-list-su">
+					<a href="#" target="_blank" class="goods-list"><img src="img/img25.jpg" data-original="img/img25.jpg" class="lazy" alt="新卡" style="display: inline;">
+					<h3>新卡</h3>
+					<span>¥398.00/2.0磅</span></a>
+					<div class="label-entrance">
+						<a href="#">一人份 &gt;</a><a href="#">新品 &gt;</a>
+					</div>
+					<a href="#" name="pro-list-addcart_415" class="pro-list-addcart" data-id="415"><i></i>加入购物车</a>
+				</div>
+				<div class="pro-specifications" data-id="415">
+				</div>
+				</li>
+				<li id="list-goods-782">
+				<div class="pro-list-su">
+					<a href="#" target="_blank" class="goods-list"><img src="img/img26.jpg" data-original="img/img26.jpg" class="lazy" alt="彼尔德（Party）黑白巧克力慕斯" style="display: inline;">
+					<h3>彼尔德（Party）黑白巧克力慕斯</h3>
+					<span>¥298.00/2.0磅</span></a>
+					<div class="label-entrance">
+						<a href="#">儿童 &gt;</a><a href="#">新品 &gt;</a><a href="#">相识 &gt;</a>
+					</div>
+					<a href="#" name="pro-list-addcart_782" class="pro-list-addcart" data-id="782"><i></i>加入购物车</a>
+				</div>
+				<div class="pro-specifications" data-id="782">
+				</div>
+				</li>
+				<li id="list-goods-20">
+				<div class="pro-list-su">
+					<a href="#" target="_blank" class="goods-list"><img src="img/img27.jpg" data-original="img/img27.jpg" class="lazy" alt="杰瑞" style="display: inline;">
+					<h3>杰瑞</h3>
+					<span>¥298.00/2.0磅</span></a>
+					<div class="label-entrance">
+						<a href="#">儿童 &gt;</a><a href="#">聚会 &gt;</a>
+					</div>
+					<a href="#" name="pro-list-addcart_20" class="pro-list-addcart" data-id="20"><i></i>加入购物车</a>
+					<div class="label">
+						<img src="img/label3.png">
+					</div>
+				</div>
+				<div class="pro-specifications" data-id="20">
+				</div>
+				</li>
+				<li id="list-goods-773">
+				<div class="pro-list-su">
+					<a href="#" target="_blank" class="goods-list"><img src="img/img28.jpg" data-original="img/img28.jpg" class="lazy" alt="百香果酸乳酪慕斯（木糖醇）" style="display: inline;">
+					<h3>百香果酸乳酪慕斯（木糖醇）</h3>
+					<span>¥298.00/2.0磅</span></a>
+					<div class="label-entrance">
+						<a href="#">情侣 &gt;</a><a href="#">低温 &gt;</a><a href="#">新品 &gt;</a>
+					</div>
+					<a href="#" name="pro-list-addcart_773" class="pro-list-addcart" data-id="773"><i></i>加入购物车</a>
+					<div class="label">
+						<img src="img/label1.png">
+					</div>
+				</div>
+				<div class="pro-specifications" data-id="773">
+				</div>
+				</li>
+				<li id="list-goods-96">
+				<div class="pro-list-su">
+					<a href="#" target="_blank" class="goods-list"><img src="img/img29.jpg" data-original="img/img29.jpg" class="lazy" alt="百香果酸乳酪慕斯蛋糕" style="display: inline;">
+					<h3>百香果酸乳酪慕斯蛋糕</h3>
+					<span>¥298.00/2.0磅</span></a>
+					<div class="label-entrance">
+						<a href="#">情侣 &gt;</a><a href="#">低温 &gt;</a><a href="#">儿童 &gt;</a>
+					</div>
+					<a href="#" name="pro-list-addcart_96" class="pro-list-addcart" data-id="96"><i></i>加入购物车</a>
+				</div>
+				<div class="pro-specifications" data-id="96">
+				</div>
+				</li>
+				<li id="list-goods-525">
+				<div class="pro-list-su">
+					<a href="#" target="_blank" class="goods-list"><img src="img/img30.jpg" data-original="img/img30.jpg" class="lazy" alt="深艾尔" style="display: inline;">
+					<h3>深艾尔</h3>
+					<span>¥268.00/1.0磅</span></a>
+					<div class="label-entrance">
+						<a href="#">情侣 &gt;</a><a href="#">低温 &gt;</a><a href="#">新品 &gt;</a>
+					</div>
+					<a href="#" name="pro-list-addcart_525" class="pro-list-addcart" data-id="525"><i></i>加入购物车</a>
+					<div class="label">
+						<img src="img/label1.png">
+					</div>
+				</div>
+				<div class="pro-specifications" data-id="525">
+				</div>
+				</li>
+				<li id="list-goods-645">
+				<div class="pro-list-su">
+					<a href="#" target="_blank" class="goods-list"><img src="img/img31.jpg" data-original="img/img31.jpg" class="lazy" alt="尽享小切块3+1组合" style="display: inline;">
+					<h3>尽享小切块3+1组合</h3>
+					<span>¥108.00/3+1组合</span></a>
+					<div class="label-entrance">
+						<a href="#">聚会 &gt;</a>
+					</div>
+					<a href="#" name="pro-list-addcart_645" class="pro-list-addcart" data-id="645"><i></i>加入购物车</a>
+				</div>
+				<div class="pro-specifications" data-id="645">
+				</div>
+				</li>
+				<li id="list-goods-702">
+				<div class="pro-list-su">
+					<a href="#" target="_blank" class="goods-list"><img src="img/img32.jpg" data-original="img/img32.jpg" class="lazy" alt="彼尔德（生日）黑白巧克力慕斯" style="display: inline;">
+					<h3>彼尔德（生日）黑白巧克力慕斯</h3>
+					<span>¥298.00/2.0磅</span></a>
+					<div class="label-entrance">
+						<a href="#">新品 &gt;</a><a href="#">生日 &gt;</a>
+					</div>
+					<a href="#" name="pro-list-addcart_702" class="pro-list-addcart" data-id="702"><i></i>加入购物车</a>
+				</div>
+				<div class="pro-specifications" data-id="702">
+				</div>
+				</li>
+				<li id="list-goods-387">
+				<div class="pro-list-su">
+					<a href="#" target="_blank" class="goods-list"><img src="img/img33.jpg" data-original="img/img33.jpg" class="lazy" alt="深爱百利甜情人蛋糕" style="display: inline;">
+					<h3>深爱百利甜情人蛋糕</h3>
+					<span>¥398.00/2.0磅</span></a>
+					<div class="label-entrance">
+						<a href="#">情侣 &gt;</a><a href="#">人气 &gt;</a><a href="#">白色情人节 &gt;</a>
+					</div>
+					<a href="#" name="pro-list-addcart_387" class="pro-list-addcart" data-id="387"><i></i>加入购物车</a>
+				</div>
+				<div class="pro-specifications" data-id="387">
+				</div>
+				</li>
+				<li id="list-goods-487">
+				<div class="pro-list-su">
+					<a href="#" target="_blank" class="goods-list"><img src="img/img34.jpg" data-original="img/img34.jpg" class="lazy" alt="6口味切块" style="display: inline;">
+					<h3>6口味切块</h3>
+					<span>¥198.00/6个（6种口味）</span></a>
+					<div class="label-entrance">
+						<a href="#">聚会 &gt;</a><a href="#">新品 &gt;</a><a href="#">人气 &gt;</a>
+					</div>
+					<a href="#" name="pro-list-addcart_487" class="pro-list-addcart" data-id="487"><i></i>加入购物车</a>
+				</div>
+				<div class="pro-specifications" data-id="487">
+				</div>
+				</li>
+				<li id="list-goods-413">
+				<div class="pro-list-su">
+					<a href="#" target="_blank" class="goods-list"><img src="img/img35.jpg" data-original="img/img35.jpg" class="lazy" alt=" （撒粉生日）黑白巧克力慕斯" style="display: inline;">
+					<h3> （撒粉生日）黑白巧克力慕斯</h3>
+					<span>¥298.00/2.0磅</span></a>
+					<div class="label-entrance">
+						<a href="#">生日 &gt;</a><a href="#">聚会 &gt;</a>
+					</div>
+					<a href="#" name="pro-list-addcart_413" class="pro-list-addcart" data-id="413"><i></i>加入购物车</a>
+				</div>
+				<div class="pro-specifications" data-id="413">
+				</div>
+				</li>
+				<li id="list-goods-718">
+				<div class="pro-list-su">
+					<a href="#" target="_blank" class="goods-list"><img src="img/img36.png" data-original="img/img36.jpg" class="lazy" alt="便携冰包-象牙白" style="display: inline;">
+					<h3>便携冰包-象牙白</h3>
+					<span>¥65.00/份</span></a>
+					<div class="label-entrance">
+					</div>
+					<a href="#" name="pro-list-addcart_718" class="pro-list-addcart" data-id="718"><i></i>加入购物车</a>
+				</div>
+				<div class="pro-specifications" data-id="718">
+				</div>
+				</li>
+				<li id="list-goods-27">
+				<div class="pro-list-su">
+					<a href="#" target="_blank" class="goods-list"><img src="img/img37.jpg" data-original="img/img37.jpg" class="lazy" alt="爱尔兰咖啡" style="display: inline;">
+					<h3>爱尔兰咖啡</h3>
+					<span>¥268.00/1.0磅</span></a>
+					<div class="label-entrance">
+						<a href="#">情侣 &gt;</a><a href="#">白色情人节 &gt;</a>
+					</div>
+					<a href="#" name="pro-list-addcart_27" class="pro-list-addcart" data-id="27"><i></i>加入购物车</a>
+				</div>
+				<div class="pro-specifications" data-id="27">
+				</div>
+				</li>
+				<li id="list-goods-29">
+				<div class="pro-list-su">
+					<a href="#" target="_blank" class="goods-list"><img src="img/img38.jpg" data-original="img/img38.jpg" class="lazy" alt="桂圆冰淇淋蛋糕" style="display: inline;">
+					<h3>桂圆冰淇淋蛋糕</h3>
+					<span>¥198.00/1.0磅</span></a>
+					<div class="label-entrance">
+						<a href="#">低温 &gt;</a><a href="#">人气 &gt;</a>
+					</div>
+					<a href="#" name="pro-list-addcart_29" class="pro-list-addcart" data-id="29"><i></i>加入购物车</a>
+				</div>
+				<div class="pro-specifications" data-id="29">
+				</div>
+				</li>
+				<li id="list-goods-28">
+				<div class="pro-list-su">
+					<a href="#" target="_blank" class="goods-list"><img src="img/img39.jpg" data-original="img/img39.jpg" class="lazy" alt="清境" style="display: inline;">
+					<h3>清境</h3>
+					<span>¥298.00/2.0磅</span></a>
+					<div class="label-entrance">
+						<a href="#">新品 &gt;</a><a href="#">聚会 &gt;</a><a href="#">相识 &gt;</a>
+					</div>
+					<a href="#" name="pro-list-addcart_28" class="pro-list-addcart" data-id="28"><i></i>加入购物车</a>
+					<div class="label">
+						<img src="img/label1.png">
+					</div>
+				</div>
+				<div class="pro-specifications" data-id="28">
+				</div>
+				</li>
+				<li id="list-goods-18">
+				<div class="pro-list-su">
+					<a href="#" target="_blank" class="goods-list"><img src="img/img40.jpg" data-original="img/img40.jpg" class="lazy" alt="黑方" style="display: inline;">
+					<h3>黑方</h3>
+					<span>¥298.00/2.0磅</span></a>
+					<div class="label-entrance">
+						<a href="#">聚会 &gt;</a><a href="#">总有一款适合你 &gt;</a>
+					</div>
+					<a href="#" name="pro-list-addcart_18" class="pro-list-addcart" data-id="18"><i></i>加入购物车</a>
+				</div>
+				<div class="pro-specifications" data-id="18">
+				</div>
+				</li>
+				<li id="list-goods-24">
+				<div class="pro-list-su">
+					<a href="#" target="_blank" class="goods-list"><img src="img/img41.jpg" data-original="img/img41.jpg" class="lazy" alt="新马斯卡彭-咖啡软芝士蛋糕" style="display: inline;">
+					<h3>新马斯卡彭-咖啡软芝士蛋糕</h3>
+					<span>¥390.00/1.0磅</span></a>
+					<div class="label-entrance">
+						<a href="#">情侣 &gt;</a><a href="#">低温 &gt;</a>
+					</div>
+					<a href="#" name="pro-list-addcart_24" class="pro-list-addcart" data-id="24"><i></i>加入购物车</a>
+				</div>
+				<div class="pro-specifications" data-id="24">
+				</div>
+				</li>
+				<li id="list-goods-341">
+				<div class="pro-list-su">
+					<a href="#" target="_blank" class="goods-list"><img src="img/img42.jpg" data-original="img/img42.jpg" class="lazy" alt="重组" style="display: inline;">
+					<h3>重组</h3>
+					<span>¥968.00/1.5磅</span></a>
+					<div class="label-entrance">
+						<a href="#">设计师款 &gt;</a><a href="#">聚会 &gt;</a><a href="#">生日 &gt;</a>
+					</div>
+					<a href="#" name="pro-list-addcart_341" class="pro-list-addcart" data-id="341"><i></i>加入购物车</a>
+				</div>
+				<div class="pro-specifications" data-id="341">
+				</div>
+				</li>
+				<li id="list-goods-132">
+				<div class="pro-list-su">
+					<a href="#" target="_blank" class="goods-list"><img src="img/img43.jpg" data-original="img/img43.jpg" class="lazy" alt="抹茶和栗" style="display: inline;">
+					<h3>抹茶和栗</h3>
+					<span>¥298.00/2.0磅</span></a>
+					<div class="label-entrance">
+						<a href="#">聚会 &gt;</a><a href="#">低温 &gt;</a><a href="#">生日 &gt;</a>
+					</div>
+					<a href="#" name="pro-list-addcart_132" class="pro-list-addcart" data-id="132"><i></i>加入购物车</a>
+				</div>
+				<div class="pro-specifications" data-id="132">
+				</div>
+				</li>
+				<li id="list-goods-11">
+				<div class="pro-list-su">
+					<a href="#" target="_blank" class="goods-list"><img src="img/img44.jpg" data-original="img/img44.jpg" class="lazy" alt="心语心愿" style="display: inline;">
+					<h3>心语心愿</h3>
+					<span>¥298.00/2.0磅</span></a>
+					<div class="label-entrance">
+						<a href="#">情侣 &gt;</a><a href="#">生日 &gt;</a><a href="#">儿童 &gt;</a>
+					</div>
+					<a href="#" name="pro-list-addcart_11" class="pro-list-addcart" data-id="11"><i></i>加入购物车</a>
+				</div>
+				<div class="pro-specifications" data-id="11">
+				</div>
+				</li>
+				<li id="list-goods-4">
+				<div class="pro-list-su">
+					<a href="#" target="_blank" class="goods-list"><img src="img/img45.jpg" data-original="img/img45.jpg" class="lazy" alt="杏仁克鲁兹" style="display: inline;">
+					<h3>杏仁克鲁兹</h3>
+					<span>¥298.00/2.0磅</span></a>
+					<div class="label-entrance">
+						<a href="#">长辈 &gt;</a><a href="#">生日 &gt;</a>
+					</div>
+					<a href="#" name="pro-list-addcart_4" class="pro-list-addcart" data-id="4"><i></i>加入购物车</a>
+				</div>
+				<div class="pro-specifications" data-id="4">
+				</div>
+				</li>
+				<li id="list-goods-30">
+				<div class="pro-list-su">
+					<a href="#" target="_blank" class="goods-list"><img src="img/img46.jpg" data-original="img/img46.jpg" class="lazy" alt="中秋坚果芝士慕斯" style="display: inline;">
+					<h3>中秋坚果芝士慕斯</h3>
+					<span>¥268.00/1.0磅</span></a>
+					<div class="label-entrance">
+						<a href="#">聚会 &gt;</a>
+					</div>
+				</div>
+				<div class="pro-specifications" data-id="30">
+				</div>
+				<a class="pro-floridian" href="#" target="_blank"><span>敬请期待</span></a><a class="to-notify-btn" href="#" data-id="3052"><i></i>到货通知</a>
+				<div class="addcart-dialog to-notify-dialog" style="display:none">
+				</div>
+				</li>
+				<li id="list-goods-19">
+				<div class="pro-list-su">
+					<a href="#" target="_blank" class="goods-list"><img src="img/img47.jpg" data-original="img/img47.jpg" class="lazy" alt="黑越橘" style="display: inline;">
+					<h3>黑越橘</h3>
+					<span>¥268.00/2.0磅</span></a>
+					<div class="label-entrance">
+						<a href="#">人气 &gt;</a>
+					</div>
+					<div class="label">
+						<img src="img/label2.png">
+					</div>
+				</div>
+				<div class="pro-specifications" data-id="19">
+				</div>
+				<a class="pro-floridian" href="#" target="_blank"><span>敬请期待</span></a><a class="to-notify-btn" href="#" data-id="2952"><i></i>到货通知</a>
+				<div class="addcart-dialog to-notify-dialog" style="display:none">
+				</div>
+				</li>
+				<li id="list-goods-295">
+				<div class="pro-list-su">
+					<a href="#" target="_blank" class="goods-list"><img src="img/img48.jpg" data-original="img/img48.jpg" class="lazy" alt="汉砖" style="display: inline;">
+					<h3>汉砖</h3>
+					<span>¥98.00/0.25磅</span></a>
+					<div class="label-entrance">
+						<a href="#">情侣 &gt;</a><a href="#">设计师款 &gt;</a><a href="#">低温 &gt;</a>
+					</div>
+				</div>
+				<div class="pro-specifications" data-id="295">
+				</div>
+				<a class="pro-floridian" href="#" target="_blank"><span>敬请期待</span></a><a class="to-notify-btn" href="#" data-id="6105"><i></i>到货通知</a>
+				<div class="addcart-dialog to-notify-dialog" style="display:none">
+				</div>
+				</li>
+				<li id="list-goods-294">
+				<div class="pro-list-su">
+					<a href="#" target="_blank" class="goods-list"><img src="img/img49.jpg" data-original="img/img49.jpg" class="lazy" alt="风乍起" style="display: inline;">
+					<h3>风乍起</h3>
+					<span>¥398.00/1.0磅</span></a>
+					<div class="label-entrance">
+						<a href="#">设计师款 &gt;</a><a href="#">低温 &gt;</a>
+					</div>
+				</div>
+				<div class="pro-specifications" data-id="294">
+				</div>
+				<a class="pro-floridian" href="#" target="_blank"><span>敬请期待</span></a><a class="to-notify-btn" href="#" data-id="6097"><i></i>到货通知</a>
+				<div class="addcart-dialog to-notify-dialog" style="display:none">
+				</div>
+				</li>
+				<li id="list-goods-297">
+				<div class="pro-list-su">
+					<a href="#" target="_blank" class="goods-list"><img src="img/img50.jpg" data-original="img/img50.jpg" class="lazy" alt="21cake生日奶油蛋糕" style="display: inline;">
+					<h3>21cake生日奶油蛋糕</h3>
+					<span>¥498.00/0.5磅</span></a>
+					<div class="label-entrance">
+						<a href="#">情侣 &gt;</a>
+					</div>
+				</div>
+				<div class="pro-specifications" data-id="297">
+				</div>
+				<a class="pro-floridian" href="#" target="_blank"><span>敬请期待</span></a><a class="to-notify-btn" href="#" data-id="6129"><i></i>到货通知</a>
+				<div class="addcart-dialog to-notify-dialog" style="display:none">
+				</div>
+				</li>
+			</ul>
+		</div>
+		<div class="pro-list-empty" style="display: none">
+			<img src="//static.21cake.com/themes/site/img/pro-list-empty.jpg" alt="没有。">
+			<!-- <img src="/themes/site/img/pro-list-empty.jpg" alt="没有"> -->
+			<span>没有。</span>
+		</div>
+	</div>
+</div>
+<!--底部-->
+<div class="footer">
+    <img class="footer-logo" src="img/footer-logo.png" height="36" width="96" alt="">
+    <!--底部导航-->
+    <div class="footer-nav">
+        <a href="#">联系我们</a>
+        <span>|</span>
+        <a href="#">订购帮助</a>
+        <span>|</span>
+        <a href="#">企业合作</a>
+        <span>|</span>
+        <a href="#">生产经营资质</a>
+        <span>|</span>
+        <a href="#">公告专区</a>
+    </div>
+    <!--底部图标-->
+    <div class="footer-icon">
+	        <a href="#" target="_blank">
+	            <img src="img/footericon-01.png">
+	        </a>
+	        <a class="footer-weixin">
+	            <div class="footer-erweima footer-weixin-erweima">
+	                <img src="img/erweima.png">
+	            </div>
+	            <img src="img/weixin-icon.png">
+	        </a>
+	        <a class="footer-app">
+	            <div class="footer-erweima footer-app-erweima">
+	                <img src="img/appma.png">
+	            </div>
+	            APP
+	        </a>
+    </div>
+    <script type="text/javascript">
+    $(".footer-weixin").hover(function(){
+        $('.footer-weixin-erweima').show().find('img').animate({top:0}, 200);
+    },function(){
+        $('.footer-weixin-erweima').hide().find('img').css('top','100%');
+    });
+     $(".footer-app").hover(function(){
+        $('.footer-app-erweima').show().find('img').animate({top:0}, 200);
+    },function(){
+        $('.footer-app-erweima').hide().find('img').css('top','100%');
+    })
+    $(document).ready(function(){
+        $('div[id*="xunlei_com"]').remove();
+        $('#jcps').remove();
+    });
+     
+</script>
+    <!--简介-->
+    <div class="footer-text">
+        <span>订购专线：400 650 2121（服务时间 08:00–22:00）</span>
+        <span>客服电话：021-23099721（全国） | kefu@21cake.com（邮箱）</span>
+        <span>杭州/广州：提前5小时预订；北京：提前6小时预订；上海：提前5.5-6小时预订；天津/苏州/无锡/深圳：提前8小时预订（部分偏远地区除外，当日22点以后订单，于次日8点开始审核） </span>
+        <span>当日蛋糕配送截止下单时间：北京：16:50；上海：16:30；杭州/广州：13:50；天津：10:30；苏州/无锡/深圳：11:00</span>
+        <span>网站注册公司名称: 北京廿一客食品有限公司 地址: 北京市北京经济技术开发区兴海二街5号院3号楼 </span>
+    </div>
+    <!--备案-->
+    <div class="footer-copyright">
+        <span>Copyright© 21Cake蛋糕官网商城 2007-2018, 版权所有 <a style="color: #9a9a9a" href="#">京ICP备14006254号-1</a></span>
+    </div>
+</div>
+	
+	</body>
+</html>

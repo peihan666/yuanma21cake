@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>21cake详情页</title>
+		<link rel="stylesheet" type="text/css" href="css/index.min.css"/>
+		 <link rel="stylesheet" type="text/css" href="css/_tool.css"/>
+		 <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		 <script src="js/index.min.js" type="text/javascript" ></script>
+		 <script scr="js/function.js" type="text/javascript" charset="utf-8"></script>  		
+		 <script type='text/javascript'>
+window.BWEUM||(BWEUM={});BWEUM.info = {"stand":true,"agentType":"browser","agent":"js/index.min.js","beaconUrl":"browsercollector.oneapm.com/beacon","licenseKey":"eMMbM~2ErABIjvrf","applicationID":9928763};
+		 </script>
+		
+     
+		<script type="text/javascript">
+      			  var Global = {
+            'domain'    : '.21cake.com',
+            'wapDomain' : 'https://m.21cake.com/',
+            'apiDomain' : 'https://api.21cake.com/',
+            'siteDomain': 'https://www.21cake.com/',
+            'wxDomain': 'https://wx.21cake.com/',
+            'staticDomain': '//static.21cake.com/',
+            'mediaDomain': '//media.21cake.com/'
+        };
+    		</script>
+	</head>
+	<body>
+		<div class="header-box">
+			<div class="header">
+	 		   <div class="header-nav">
+	     			   <a class="header-logo" href="http://127.0.0.1/yuanma21cake/gulp21cake/dist/index.html?__hbt=1546488789006">
+      				  <img src="img/logo.png" alt="21cake logo" />        
+       				 </a>
+       			 <ul class="nav-box">
+           			 <li><a href="http://127.0.0.1/yuanma21cake/gulp21cake/dist/index.html?__hbt=1546488789006" >首页</a></li>
+	                            <li><a href="http://127.0.0.1/yuanma21cake/gulp21cake/dist/nav.html?__hbt=1546416813834" target="_self">蛋糕</a></li>
+	                            <li><a href="" target="_self">面包</a></li>
+	                            <li><a href="" target="_self">冰淇淋</a></li>
+	                            <li><a href="" target="_self">咖啡下午茶</a></li>
+	                            <li><a href="" target="_self">咖啡全国送</a></li>
+	                            <li><a href="" target="_self">企业专区</a></li>
+                   	 </ul>
+				   <div class="right-city-user">
+	<a class="header-app app-download" data-id="app-list" name="app_download">APP下载</a>
+	<div class="current-city" data-id="current-city">
+		深圳<i></i>
+	</div>
+	<a class="header-message" data-id="messageList" href="#">消息</a>
+	<span class="not-login"><a href="http://127.0.0.1/yuanma21cake/gulp21cake/dist/setin.html?__hbt=1546436329948">登录</a>/<a href="http://127.0.0.1/yuanma21cake/gulp21cake/dist/setup.html?__hbt=1546487195661">注册</a></span>
+	<a href="http://127.0.0.1/yuanma21cake/gulp21cake/dist/car.html?__hbt=1546485246286" class="header-cart" id="cart-count-icon">
+	<i></i>
+	</a>
+	<ul class="current-city-list header-select" id="current-city" style="display: none; height: 174px; padding-top: 12px; margin-top: 0px; padding-bottom: 12px; margin-bottom: 0px;">
+		<li><a href="#" class="city-id-1" data-json="{&quot;id&quot;:&quot;1&quot;,&quot;name&quot;:&quot;\u4e0a\u6d77&quot;,&quot;region_id&quot;:&quot;22&quot;}">上海</a></li>
+		<li><a href="#" class="city-id-2" data-json="{&quot;id&quot;:&quot;2&quot;,&quot;name&quot;:&quot;\u5317\u4eac&quot;,&quot;region_id&quot;:&quot;2&quot;}">北京</a></li>
+		<li><a href="#" class="city-id-3" data-json="{&quot;id&quot;:&quot;3&quot;,&quot;name&quot;:&quot;\u5929\u6d25&quot;,&quot;region_id&quot;:&quot;43&quot;}">天津</a></li>
+		<li><a href="#" class="city-id-4" data-json="{&quot;id&quot;:&quot;4&quot;,&quot;name&quot;:&quot;\u676d\u5dde&quot;,&quot;region_id&quot;:&quot;3134&quot;}">杭州</a></li>
+		<li><a href="#" class="city-id-5" data-json="{&quot;id&quot;:&quot;5&quot;,&quot;name&quot;:&quot;\u65e0\u9521&quot;,&quot;region_id&quot;:&quot;1717&quot;}">无锡</a></li>
+		<li><a href="#" class="city-id-6" data-json="{&quot;id&quot;:&quot;6&quot;,&quot;name&quot;:&quot;\u82cf\u5dde&quot;,&quot;region_id&quot;:&quot;1692&quot;}">苏州</a></li>
+		<li><a href="#" class="city-id-7" data-json="{&quot;id&quot;:&quot;7&quot;,&quot;name&quot;:&quot;\u5e7f\u5dde&quot;,&quot;region_id&quot;:&quot;424&quot;}">广州</a></li>
+		<li><a href="#" class="city-id-8" data-json="{&quot;id&quot;:&quot;8&quot;,&quot;name&quot;:&quot;\u6df1\u5733&quot;,&quot;region_id&quot;:&quot;524&quot;}" style="display: none;">深圳</a></li>
+	</ul>
+	
+	<ul class="message-list-header header-select" id="messageList" style="display: none; height: 54px; padding-top: 12px; margin-top: 0px; padding-bottom: 12px; margin-bottom: 0px;">
+		<li><a href="#" target="_blank">通知</a></li>
+		<li><a href="#" target="_blank">物流</a></li>
+	</ul>
+	<dl class="app-list header-select" id="app-list" style="display: none; height: 115px; padding-top: 10px; margin-top: 0px; padding-bottom: 10px; margin-bottom: 0px;">
+		<dt>
+		<img src="img/appma.png" alt="下载APP">
+
+		</dt>
+		<dd>下载享更多优惠</dd>
+	</dl>
+</div>  	 
+    				</div>
+			</div>
+		</div>
+<script type="text/javascript">
+    $(".header-app").hover(function(){
+        $('.app-list').show().find('dl').animate({height:0}, 115);
+    },function(){
+        $('.app-list').hide().find('dl').animate({height:115}, 0);
+    });
+     $(".current-city").hover(function(){
+        $('.current-city-list').show().find('ul').animate({top:0}, 65);
+    },function(){
+        $('.current-city-list').hide().find('ul').css('top','100%');
+    })
+     $(".header-message").hover(function(){
+        $('.message-list-header').show().find('ul').animate({top:0}, 65);
+    },function(){
+        $('.message-list-header').hide().find('ul').css('top','100%');
+    })
+    
+     
+</script>
+<!--购物导航-->	
+	<ul class="cart-sales cart-area cart-area-new">
+		<li>
+			<ul id="cart-events-box">
+			</ul>
+		</li>
+	</ul>
+	<div class="details-banner">
+		<div class="left-img-box">
+			<div class="video-box">
+				<img id="otherImg" src="img/smallpic1.jpg">
+			<button id="videoButton" style="display: none" data-video="">
+			<img src="img/video.png" class="play">
+			<img src="img/loading.gif" class="loading" style="display: none">
+			</button>
+			<div class="pause" style="display: none;">
+			</div>
+		</div>
+	</div>
+		<div class="right-list">
+			<a href="#" class="top-banner"></a>
+			<ul id="bannerImgList">
+			<li data-url="img/smallpic1.jpg" class="active">
+			<img src="img/smallpic1.jpg" alt="Strawberry Cream Cake 草莓奶油蛋糕">
+			</li>
+			<li data-url="img/smallpic2.jpg" class="">
+			<img src="img/smallpic2.jpg" alt="Strawberry Cream Cake 草莓奶油蛋糕">
+			</li>
+		</ul>
+	</div>
+</div>
+	<div class="suspension-box" style="display: none;">
+		<div class="details-nav">
+			<div>
+				<h2>Strawberry Cream Cake  草莓奶油蛋糕</h2>
+			<a class="add-cart" href="#" hidden style="display: inline;"><i></i></a>
+			<p class="product-price can-drop">
+				¥<span>228.00</span>/2.0磅
+			</p>
+		</div>
+	</div>
+			<div class="details-suspension-list J-suspension-list" style="display: none; height: 306px; padding-top: 0px; margin-top: 0px; padding-bottom: 30px; margin-bottom: 0px;">
+				<div class="details-img-box">
+			<img src="img/lifang.jpg" class="details-img">
+			<ul class="details-options fl-left">
+				<li class="details-options-size"><i></i>约17.5x17.5</li>
+				<li class="details-options-unmber"><i></i>适合7-8人分享</li>
+				<li class="details-options-laid"><i></i>含10套餐具</li>
+				<li class="details-options-time"><i></i>最早明天 10:00配送</li>
+			</ul>
+		</div>
+		<dl class="details-Specifications-size-extra">
+			<dt>商品规格</dt>
+			<dd>
+			<ul>
+			</ul>
+			</dd>
+		</dl>
+		<!-- 选择蛋糕尺寸 -->
+		<dl class="details-Specifications-size">
+			<dt>商品规格</dt>
+			<dd>
+			<ul>
+				<li><a class="active" data-productid="2844">2.0磅<i></i></a></li>
+			</ul>
+			</dd>
+		</dl>
+		<div class="suspension-button">
+			<button class="details-but-buy" name="details-but-buy_top">立即购买</button>
+			<button class="details-but-cart" id="susAddCart" name="details-but-cart_top">加入购物车</button>
+		</div>
+	</div>
+	<!-- 浮层添加购物车成功 -->
+	<div class="details-suspension-list nav-addcart">
+		<!-- 加入等待动画 -->
+		<span style="display:none"></span>
+		<!-- 加入成功后 -->
+		<div>
+			<p>
+				<i></i>成功添加购物车
+			</p>
+			<a href="#" class="details-go-cart" name="details-go-cart_top">查看购物车</a>
+		</div>
+		<i></i>
+	</div>
+</div>
+<!--详情内容-->		
+	<div class="content-box" style="min-height: 217px;">
+	<div class="pro-details-cont">
+		<div class="details-content-left">
+			<h1 class="pro-details-title">Strawberry Cream Cake  草莓奶油蛋糕</h1>
+			<div class="sub-title">
+				<p>
+					此款为应季水果蛋糕，可能受限于原料供应；如出现无法交付的情况，届时我们会主动联系您进行告知。
+				</p>
+			</div>
+			<div class="pro-details-label">
+				<a href="#" target="_blank">情侣 &gt;</a>
+				<a href="#" target="_blank">人气 &gt;</a>
+			</div>
+			<ul class="details-constituent">
+				<li>
+				<img src="img/pcicon-20.png" alt="红颜草莓，糖度>8%">                                    
+				
+				<span>红颜草莓，糖度&gt;8%</span>
+				</li>
+			</ul>
+			<div class="pro-details-explain">
+                /草莓配奶油，从王室，前往温布尔登的雨季/
+				<br>
+Now 21cake has encapsulated this gloriously English tradition in square cake form. At Wimbledon, which dates back to 1877, protocol and propriety rule. Players must wear white...
+				<br>
+			</div>
+			<ul class="details-distribution">
+				<li class="distribution-exist"><i></i><span>保鲜条件：</span>0－4℃保藏10小时，5℃食用为佳</li>
+				<li class="distribution-sweet" data-sweet="3">
+				<i></i>
+				<span style="margin-left:5px;">参考甜度：</span>
+				<span class="sweet-icon">
+				<i class="active"></i>
+				<i class="active"></i>
+				<i class="active"></i>
+				<i></i>
+				<i></i>
+				</span>
+				</li>
+			</ul>
+		</div>
+		<!-- 价格显示 -->
+		<div class="details-content-right">
+			<p class="details-price">
+				¥<span>228.00</span>/2.0磅
+			</p>
+			<div class="details-Specifications">
+				<div class="outer-box">
+					<div class="details-img-box">
+						<img src="img/lifang.jpg" class="details-img">
+						<ul class="details-options fl-left">
+							<li class="details-options-size"><i></i>约17.5x17.5</li>
+							<li class="details-options-unmber"><i></i>适合7-8人分享</li>
+							<li class="details-options-laid"><i></i>含10套餐具</li>
+							<li class="details-options-time"><i></i>最早明天 10:00配送</li>
+						</ul>
+					</div>
+					<dl class="details-Specifications-size-extra">
+						<dt>商品规格</dt>
+						<dd>
+						<ul>
+						</ul>
+						</dd>
+					</dl>
+					<!-- 选择蛋糕尺寸 -->
+					<dl class="details-Specifications-size">
+						<dt>商品规格</dt>
+						<dd>
+						<ul>
+							<li><a class="active" data-productid="2844">2.0磅<i></i></a></li>
+						</ul>
+						</dd>
+					</dl>
+				</div>
+				<!-- 赠品 -->
+				<!-- 购物按钮 -->
+				<div class="details-button">
+					<button href="javascript:void(0);" class="details-but-buy" name="details-but-buy_bottom">立即购买</button>
+					<button href="javascript:void(0);" class="details-but-cart detailsAddCart" name="details-but-cart_bottom">加入购物车
+					</button>
+					<button href="javascript:void(0);" class="details-empty" name="details-empty" style="display: none;"><i></i>到货通知
+					</button>
+				</div>
+				<div class="addcart-dialog in-cart">
+					<!-- 加入等待 -->
+					<span></span>
+					<!-- 加入成功后 -->
+					<div style="display: none">
+						<p>
+							<i></i>成功添加购物车
+						</p>
+						<a href="#" class="details-go-cart" name="details-go-cart_bottom">查看购物车</a>
+					</div>
+					<i></i>
+				</div>
+				<!-- 登录提醒 -->
+				<div class="addcart-dialog details-empty-dialog">
+					<div>
+						<!-- <p>先登录/注册再设置
+					</p>
+					 -->
+					<p>
+						到货提醒设置成功！
+					</p>
+					<!-- <a href="#" class="details-go-cart">去登录/注册</a> -->
+				</div>
+				<i></i>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="hideDiv">
+</div>
+<!-- 详情图 -->
+<div class="details-introduction">
+	<p>
+		Now 21cake has encapsulated this gloriously English tradition in square cake form. At Wimbledon, which dates back to 1877, protocol and propriety rule. Players must wear white. And you must have lashings of fresh smooth cream with your strawberries. To help enforce this tradition, 21cake has combined the best organic strawberries with New Zealand cream. What else do we add? A dash of English reserve and a whole lot of sets appeal. Smashing!
+	</p>
+	<p>
+		/草莓配奶油，从王室，前往温布尔登的雨季/&nbsp;
+	</p>
+	<p>
+		
+		<img src="img/pagepic1.jpg">
+		<img src="img/pagepic2.jpg">
+		<img src="img/pagepic3.jpg">&nbsp;&nbsp;&nbsp; 
+		<img style="DISPLAY: block" src="img/pagepic4.jpg">
+		<img style="DISPLAY: block" src="img/pagepic1.jpg">
+	</p>
+	<p style="TEXT-ALIGN: center">
+		<font color="#999999" size="1">以上图片仅供参考，请以收到实物为准。</font>
+	</p>
+	<p>
+		&nbsp;
+	</p>
+	<p style="MARGIN-TOP: 30px">
+		温布尔登， 一个英国小镇，代表着尊贵和神圣的地方。 每年6月最后一周的周一， 至7月初定期举行网球赛事（每年的温网必定会碰上雨天）， 自1877年至今，已经形成了传统。 网球的历史，更要追溯到13世纪的法国王室， 每逢比赛现场，绅士随处可见。 今天欣赏网球的规矩、习惯，或许要从那时候去考证了。 在比赛中，球员的比赛服装的颜色只能是白色。 女选手在整个赛事中，其姓之前被冠以“小姐”或“夫人”。 男性观众依然不能穿着短裤，女性则不能戴帽子。 草莓配奶油是观看比赛期间的传统零食。
+	</p>
+	<div style="BORDER-BOTTOM: #eee 1px solid; WIDTH: 100%; HEIGHT: 10px">
+	</div>
+	<div style="MARGIN-TOP: 10px; WIDTH: 100%">
+		小提示:
+		<ol>
+			<li>1、蛋糕规格及免费配送餐具 ：
+			<table style="WIDTH: 40%; MARGIN-LEFT: 19px">
+			<colgroup>
+			<col style="WIDTH: 35%">
+			<col style="WIDTH: 35%">
+			<col style="WIDTH: 30%"></colgroup>
+			<tbody>
+			<tr>
+				<td>
+					1.0磅：约13×13(cm)
+				</td>
+				<td>
+					适合3-4人食用
+				</td>
+				<td>
+					免费配送5套餐具
+				</td>
+			</tr>
+			<tr>
+				<td>
+					2.0磅：约17×17(cm)
+				</td>
+				<td>
+					适合7-8人食用
+				</td>
+				<td>
+					免费配送10套餐具
+				</td>
+			</tr>
+			<tr>
+				<td>
+					3.0磅：约23×23(cm)
+				</td>
+				<td>
+					适合11-12人食用
+				</td>
+				<td>
+					免费配送15套餐具
+				</td>
+			</tr>
+			<tr>
+				<td>
+					5.0磅：约30×30(cm)
+				</td>
+				<td>
+					适合15-20人食用
+				</td>
+				<td>
+					免费配送20套餐具
+				</td>
+			</tr>
+			</tbody>
+			</table>
+			<p style="MARGIN-LEFT: 19px">
+				订购5磅及5磅以上规格的蛋糕，请与客服人员联系，订购电话：400 650 2121
+			</p>
+			</li>
+			<li>2、蛋糕在收到后2-3小时内食用为佳。 
+			</li>
+			<li>3、如对上述食材有过敏经历者，请选择其它款蛋糕。 </li>
+		</ol>
+	</div>
+	<p class="MsoNormal">
+		<font color="#666666" size="2" face="Microsoft Yahei">退改说明：</font>
+	</p>
+	<p class="MsoNormal">
+		<font color="#666666" size="2" face="Microsoft Yahei"><span lang="EN-US">1.&nbsp;</span>北京、上海、杭州、广州地区距配送时间<span lang="EN-US">5</span>小时及以上的订单可修改、取消、退订；距配送时间不足<span lang="EN-US">5</span>小时，订单不再支持修改、取消、退订。（<span lang="EN-US">22</span>点之后不接受次日<span lang="EN-US">14</span>点之前配送订单修改、退订）<span lang="EN-US"><!--?XML:NAMESPACE PREFIX = O /--><o:p></o:p></span></font>
+	</p>
+	<p class="MsoNormal">
+		<font color="#666666" size="2" face="Microsoft Yahei"><span lang="EN-US">2.&nbsp;</span>苏州、无锡、深圳、天津距配送时间不足<span lang="EN-US">8</span>小时，订单不再支持修改、取消、退订。（<span lang="EN-US">22</span>点之后不接受次日<span lang="EN-US">16</span>点之前配送订单修改、退订）</font>
+	</p>
+</div>
+<div class="recommend-box" style="display: block;">
+	<h2>商品推荐</h2>
+	<ul class="recommend-list">
+		<li><a href="#" target="_blank"><img src="img/nav1.jpg" alt="榴莲飘飘">
+		<h4>榴莲飘飘</h4>
+		<p>
+			￥298.00/2.0磅
+		</p>
+		</a>
+		<div class="recommend-cart">
+			<p>
+				<a href="#" target="_blank">自然成熟榴莲肉,超薄白巧克力片</a>
+			</p>
+			<button data-productid="2761"><i></i></button>
+		</div>
+		</li>
+		<li><a href="#" target="_blank"><img src="img/nav2.jpg" alt="芒果奶油蛋糕">
+		<h4>芒果奶油蛋糕</h4>
+		<p>
+			￥198.00/2.0磅
+		</p>
+		</a>
+		<div class="recommend-cart">
+			<p>
+				<a href="#" target="_blank">芒果,百香果酱</a>
+			</p>
+			<button data-productid="9185"><i></i></button>
+		</div>
+		</li>
+		<li><a href="#" target="_blank"><img src="img/nav3.jpg" alt="百利甜情人">
+		<h4>百利甜情人</h4>
+		<p>
+			￥298.00/2.0磅
+		</p>
+		</a>
+		<div class="recommend-cart">
+			<p>
+				<a href="#" target="_blank">爱尔兰百利甜酒,当日空运云南玫瑰</a>
+			</p>
+			<button data-productid="2569"><i></i></button>
+		</div>
+		</li>
+		<li><a href="#" target="_blank"><img src="img/nav4.jpg" alt="浅草">
+		<h4>浅草</h4>
+		<p>
+			￥298.00/2.0磅
+		</p>
+		</a>
+		<div class="recommend-cart">
+			<p>
+				<a href="#" target="_blank">绿茶,玄米,梨</a>
+			</p>
+			<button data-productid="12830"><i></i></button>
+		</div>
+		</li>
+		
+	</ul>
+</div>
+</div>	
+    <input type="hidden" name="productId">
+    <input type="hidden" name="goodsId" value="13">
+    <input type="hidden" name="markUpDoodsId" value="13">
+    <input type="hidden" name="isProductPage" value="false">
+    <input type="hidden" name="morePound" value="false">	
+		
+<!--底部内容-->		
+<div class="footer">
+    <img class="footer-logo" src="img/footer-logo.png" height="36" width="96" alt="">
+    <!--底部导航-->
+    <div class="footer-nav">
+        <a href="#">联系我们</a>
+        <span>|</span>
+        <a href="#">订购帮助</a>
+        <span>|</span>
+        <a href="#">企业合作</a>
+        <span>|</span>
+        <a href="#">生产经营资质</a>
+        <span>|</span>
+        <a href="#">公告专区</a>
+    </div>
+    <!--底部图标-->
+    <div class="footer-icon">
+	        <a href="#" target="_blank">
+	            <img src="img/footericon-01.png">
+	        </a>
+	        <a class="footer-weixin">
+	            <div class="footer-erweima footer-weixin-erweima">
+	                <img src="img/erweima.png">
+	            </div>
+	            <img src="img/weixin-icon.png">
+	        </a>
+	        <a class="footer-app">
+	            <div class="footer-erweima footer-app-erweima">
+	                <img src="img/appma.png">
+	            </div>
+	            APP
+	        </a>
+    </div>
+    <script type="text/javascript">
+    $(".footer-weixin").hover(function(){
+        $('.footer-weixin-erweima').show().find('img').animate({top:0}, 200);
+    },function(){
+        $('.footer-weixin-erweima').hide().find('img').css('top','100%');
+    });
+     $(".footer-app").hover(function(){
+        $('.footer-app-erweima').show().find('img').animate({top:0}, 200);
+    },function(){
+        $('.footer-app-erweima').hide().find('img').css('top','100%');
+    })
+    $(document).ready(function(){
+        $('div[id*="xunlei_com"]').remove();
+        $('#jcps').remove();
+    });
+     
+</script>
+    <!--简介-->
+    <div class="footer-text">
+        <span>订购专线：400 650 2121（服务时间 08:00–22:00）</span>
+        <span>客服电话：021-23099721（全国） | kefu@21cake.com（邮箱）</span>
+        <span>杭州/广州：提前5小时预订；北京：提前6小时预订；上海：提前5.5-6小时预订；天津/苏州/无锡/深圳：提前8小时预订（部分偏远地区除外，当日22点以后订单，于次日8点开始审核） </span>
+        <span>当日蛋糕配送截止下单时间：北京：16:50；上海：16:30；杭州/广州：13:50；天津：10:30；苏州/无锡/深圳：11:00</span>
+        <span>网站注册公司名称: 北京廿一客食品有限公司 地址: 北京市北京经济技术开发区兴海二街5号院3号楼 </span>
+    </div>
+    <!--备案-->
+    <div class="footer-copyright">
+        <span>Copyright© 21Cake蛋糕官网商城 2007-2018, 版权所有 <a style="color: #9a9a9a" href="#">京ICP备14006254号-1</a></span>
+    </div>
+</div>		
+	</body>
+</html>

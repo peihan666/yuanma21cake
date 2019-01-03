@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>21Cake蛋糕官网</title>
+		 <link rel="stylesheet" type="text/css" href="css/index.min.css"/>
+		 <link rel="stylesheet" type="text/css" href="css/_tool.css"/>
+		 <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		 <script scr="js/function.js" type="text/javascript" charset="utf-8"></script>  	
+     <script type="text/javascript">
+        var Global = {
+            'domain'    : '.21cake.com',
+            'wapDomain' : 'https://m.21cake.com/',
+            'apiDomain' : 'https://api.21cake.com/',
+            'siteDomain': 'https://www.21cake.com/',
+            'wxDomain': 'https://wx.21cake.com/',
+            'staticDomain': '//static.21cake.com/',
+            'mediaDomain': '//media.21cake.com/'
+        };
+    </script>
+	</head>
+	<body>
+		<!--导航-->
+		<div class="header-box">
+			<div class="header">
+	 		   <div class="header-nav">
+	     			   <a class="header-logo" href="http://127.0.0.1/yuanma21cake/gulp21cake/dist/index.html?__hbt=1546485429430">
+      				  <img src="img/logo.png" alt="21cake logo" />        
+       				 </a>
+       			 <ul class="nav-box">
+           			 <li><a href="http://127.0.0.1/yuanma21cake/gulp21cake/dist/index.html?__hbt=1546485429430" >首页</a></li>
+	                            <li><a href="http://127.0.0.1/yuanma21cake/gulp21cake/dist/nav.html?__hbt=1546416813834" target="_blank">蛋糕</a></li>
+	                            <li><a href="#" target="_self">面包</a></li>
+	                            <li><a href="#" target="_self">冰淇淋</a></li>
+	                            <li><a href="#" target="_self">咖啡下午茶</a></li>
+	                            <li><a href="#" target="_self">咖啡全国送</a></li>
+	                            <li><a href="#" target="_self">企业专区</a></li>
+                   	 </ul>
+				   <div class="right-city-user">
+	<a class="header-app app-download" data-id="app-list" name="app_download">APP下载</a>
+	<div class="current-city" data-id="current-city">
+		深圳<i></i>
+	</div>
+	<a class="header-message" data-id="messageList" href="#">消息</a>
+	<span class="not-login"><a href="http://127.0.0.1/yuanma21cake/gulp21cake/dist/setin.html?__hbt=1546436329948" target="_blank">登录</a>/<a href="http://127.0.0.1/yuanma21cake/gulp21cake/dist/setup.html?__hbt=1546487195661">注册</a></span>
+	<a href="http://127.0.0.1/yuanma21cake/gulp21cake/dist/car.html?__hbt=1546485246286" class="header-cart" id="cart-count-icon">
+	<i></i>
+	</a>
+	<ul class="current-city-list header-select" id="current-city" style="display: none; height: 174px; padding-top: 12px; margin-top: 0px; padding-bottom: 12px; margin-bottom: 0px;">
+		<li><a href="#" class="city-id-1" data-json="{&quot;id&quot;:&quot;1&quot;,&quot;name&quot;:&quot;\u4e0a\u6d77&quot;,&quot;region_id&quot;:&quot;22&quot;}">上海</a></li>
+		<li><a href="#" class="city-id-2" data-json="{&quot;id&quot;:&quot;2&quot;,&quot;name&quot;:&quot;\u5317\u4eac&quot;,&quot;region_id&quot;:&quot;2&quot;}">北京</a></li>
+		<li><a href="#" class="city-id-3" data-json="{&quot;id&quot;:&quot;3&quot;,&quot;name&quot;:&quot;\u5929\u6d25&quot;,&quot;region_id&quot;:&quot;43&quot;}">天津</a></li>
+		<li><a href="#" class="city-id-4" data-json="{&quot;id&quot;:&quot;4&quot;,&quot;name&quot;:&quot;\u676d\u5dde&quot;,&quot;region_id&quot;:&quot;3134&quot;}">杭州</a></li>
+		<li><a href="#" class="city-id-5" data-json="{&quot;id&quot;:&quot;5&quot;,&quot;name&quot;:&quot;\u65e0\u9521&quot;,&quot;region_id&quot;:&quot;1717&quot;}">无锡</a></li>
+		<li><a href="#" class="city-id-6" data-json="{&quot;id&quot;:&quot;6&quot;,&quot;name&quot;:&quot;\u82cf\u5dde&quot;,&quot;region_id&quot;:&quot;1692&quot;}">苏州</a></li>
+		<li><a href="#" class="city-id-7" data-json="{&quot;id&quot;:&quot;7&quot;,&quot;name&quot;:&quot;\u5e7f\u5dde&quot;,&quot;region_id&quot;:&quot;424&quot;}">广州</a></li>
+		<li><a href="#" class="city-id-8" data-json="{&quot;id&quot;:&quot;8&quot;,&quot;name&quot;:&quot;\u6df1\u5733&quot;,&quot;region_id&quot;:&quot;524&quot;}" style="display: none;">深圳</a></li>
+	</ul>
+	
+	<ul class="message-list-header header-select" id="messageList" style="display: none; height: 54px; padding-top: 12px; margin-top: 0px; padding-bottom: 12px; margin-bottom: 0px;">
+		<li><a href="#" target="_blank">通知</a></li>
+		<li><a href="#" target="_blank">物流</a></li>
+	</ul>
+	<dl class="app-list header-select" id="app-list" style="display: none; height: 115px; padding-top: 10px; margin-top: 0px; padding-bottom: 10px; margin-bottom: 0px;">
+		<dt>
+		<img src="img/appma.png" alt="下载APP">
+
+		</dt>
+		<dd>下载享更多优惠</dd>
+	</dl>
+</div>  	 
+    				</div>
+			</div>
+		</div>
+<script type="text/javascript">
+    $(".header-app").hover(function(){
+        $('.app-list').show().find('dl').animate({height:0}, 115);
+    },function(){
+        $('.app-list').hide().find('dl').animate({height:115}, 0);
+    });
+     $(".current-city").hover(function(){
+        $('.current-city-list').show().find('ul').animate({top:0}, 65);
+    },function(){
+        $('.current-city-list').hide().find('ul').css('top','100%');
+    })
+     $(".header-message").hover(function(){
+        $('.message-list-header').show().find('ul').animate({top:0}, 65);
+    },function(){
+        $('.message-list-header').hide().find('ul').css('top','100%');
+    })
+    
+     
+</script>
+<!--公告-->
+    <ul class="cart-sales cart-area" style="position: absolute; top: 80px; left: 50%; margin-left: -600px; z-index: 100000; display: block;">
+	<li>
+	<ul id="cart-events-box">
+		<li>
+		<p style="margin-top: -10.5px;">
+			<img src="img/notic.png"><span>卜壳面包，不添加的味道，马上品尝</span><a href="#">点击查看&gt;&gt;</a>
+		</p>
+		</li>
+	</ul>
+	</li>
+</ul>
+<!-- 轮播图 -->
+   
+   
+   	
+   <div class="slide" id="slider" style="height: 543px; width: 100%; position: relative;">
+		<div style="width: 100%; height: 543px; min-width: 980px; position: absolute; left: 0px; top: 0px; display: none; overflow: hidden; text-align: center; backface-visibility: hidden; transform: translate3d(0px, 0px, 0px); opacity: 1;">
+			<a class="back_a" name="sliders_1" data-name="草莓奶油蛋糕" href="#" data-original="img/lunbo1.jpg" style="background-image: url(img/lunbo1.jpg); display: inline-block; width: 100%; height: 100%; background-position: center center; background-repeat: no-repeat; transform: scale(1); backface-visibility: hidden; transition: all 5s;">
+			</a>
+		</div>
+		<div style="width: 100%; height: 543px; min-width: 980px; position: absolute; left: 0px; top: 0px; overflow: hidden; text-align: center; backface-visibility: hidden; transform: translate3d(0px, 0px, 0px); display: block; opacity: 1;">
+			<a class="back_a" name="sliders_2" data-name="黑森林" href="#" data-original="img/lunbo2.jpg" style="background-image: url(img/lunbo2.jpg); display: inline-block; width: 100%; height: 100%; background-position: center center; background-repeat: no-repeat; transform: scale(1); backface-visibility: hidden; transition: all 5s;">
+			</a>
+		</div>
+		<div style="width: 100%; height: 543px; min-width: 980px; position: absolute; left: 0px; top: 0px; overflow: hidden; text-align: center; backface-visibility: hidden; transform: translate3d(0px, 0px, 0px); display:block;opacity: 1;">
+			<a class="back_a" name="sliders_3" data-name="平安夜" href="#" data-original="img/lunbo3.jpg" style="background-image: url(img/lunbo3.jpg); display: inline-block; width: 100%; height: 100%; background-position: center center; background-repeat: no-repeat; transform: scale(1); backface-visibility: hidden; transition: all 5s;">
+				
+			</a>
+		</div>
+		<div style="width: 100%; height: 543px; min-width: 980px; position: absolute; left: 0px; top: 0px; overflow: hidden; text-align: center; backface-visibility: hidden; transform: translate3d(0px, 0px, 0px); display:block; opacity: 1;">
+			<a class="back_a" name="sliders_4" data-name="小重组" href="#" data-original="img/lunbo4" style="background-image: url(img/lunbo4.jpg); display: inline-block; width: 100%; height: 100%; background-position: center center; background-repeat: no-repeat; transform: scale(1); backface-visibility: hidden; transition: all 5s;">
+			</a>
+			
+		</div>
+		
+		<h3 style="position: absolute; top: 236.5px; padding: 20px 10px; font-size: 30px; font-family: 黑体; color: rgb(255, 255, 255); background: rgba(0, 0, 0, 0.5); cursor: pointer; display: none;"></h3>
+</div>
+
+     <script>
+       	 var sliderHeight = $(window).height()-80-140;
+       		 if(sliderHeight <= 480){
+           		 sliderHeight = 480;
+       		 }
+       		 $('.slide').css('height',sliderHeight)
+       		
+    </script>
+    <!-- 中间内容 -->
+    <div class="content-box">
+                <div class="home-module home-menu">
+                        <a  href="#1" name="menu_1">
+            
+            <img src="img/nav1 (2).jpg" alt="新品" title="新品" />            
+            </a>
+                        <a  href="#2" name="menu_2">
+            
+            <img src="img/nav2.png" alt="生日" title="生日" />            
+            </a>
+                        <a  href="#4" name="menu_3">
+            
+            <img src="img/nav3.png" alt="儿童" title="儿童" />            
+            </a>
+                        <a  href="#5" name="menu_4">
+            
+            <img src="img/nav4.png" alt="聚会" title="聚会" />            
+            </a>
+                        <a  href="#6" name="menu_5">
+            
+            <img src="img/nav5.png" alt="活动专区" title="活动专区" />            
+            </a>
+                    </div>
+                 <!--展示区-->   
+                <div class="home-module home-colorful anchor" id="1">
+		<h4 class="home-module-title">新品<span>/</span><span>专区</span></h4>
+		<div class="colorful-top-banner"> <a href="#" target="_blank" name="floor_banner_1"><img class="lazy" data-original="img/title1.jpg" src="img/title1.jpg" style="display: inline;"></a></div>
+		<div class="color-product-list">
+				<div class="list-box">
+						<ul>
+								<li> <a href="/goods-13.html" name="floor_goods_img_1_13" target="_blank"><img class="lazy" data-original="img/new1.png" src="img/new1.png" style="display: block;"></a> <a href="/goods-13.html" name="floor_goods_name_1_13" target="_blank">
+										<h6>草莓奶油蛋糕</h6>
+										</a> <a href="/goods-13.html" name="floor_goods_description_1_13" target="_blank">
+										<p>甜润奶油，与草莓的自然甜度搭配</p>
+										</a>
+										<div class="tag-list"> <a href="/gallery/tag/17.html" target="_blank" name="goods_tag_1_17">情侣 &gt;</a><a href="/gallery/tag/31.html" target="_blank" name="goods_tag_1_31">人气 &gt;</a></div>
+										<div class="cart-info"> <span class="spec">¥228.00/2.0磅</span> <a href="javascript:void(0);" class="add-cart" name="add_cart_1_13" data-id="13">加入购物车</a> </div>
+										<div class="spec-detail">
+												<div class="spec-title">￥36.0/份</div>
+												<div class="spec-info"> </div>
+												<div class="buttons">
+														<div class="button left buy-now" data-id="13" name="buy_now_1_13">立即购买</div>
+														<div class="button coffee right add-to-cart" data-id="13" name="add_to_cart_1_13">加入购物车</div>
+												</div>
+										</div>
+										<div class="addcart-success">
+												<div>
+														<p><i></i>成功添加购物车</p>
+														<a href="/cart.do" class="button" target="_blank" name="go_to_cart_1_13">查看购物车</a> </div>
+										</div>
+								</li>
+								<li> <a href="/goods-8.html" name="floor_goods_img_1_8" target="_blank"><img class="lazy" data-original="img/new2.png" src="img/new2.png" style="display: block;"></a> <a href="#l" name="floor_goods_name_1_8" target="_blank">
+										<h6>黑森林</h6>
+										</a> <a href="/goods-8.html" name="floor_goods_description_1_8" target="_blank">
+										<p>樱桃酒味，从巧克力卷的缝隙飘出</p>
+										</a>
+										<div class="tag-list"> <a href="/gallery/tag/17.html" target="_blank" name="goods_tag_1_17">情侣 &gt;</a><a href="/gallery/tag/31.html" target="_blank" name="goods_tag_1_31">人气 &gt;</a></div>
+										<div class="cart-info"> <span class="spec">¥398.00/2.0磅</span> <a href="javascript:void(0);" class="add-cart" name="add_cart_1_8" data-id="8">加入购物车</a> </div>
+										<div class="spec-detail">
+												<div class="spec-title">￥36.0/份</div>
+												<div class="spec-info"> </div>
+												<div class="buttons">
+														<div class="button left buy-now" data-id="8" name="buy_now_1_8">立即购买</div>
+														<div class="button coffee right add-to-cart" data-id="8" name="add_to_cart_1_8">加入购物车</div>
+												</div>
+										</div>
+										<div class="addcart-success">
+												<div>
+														<p><i></i>成功添加购物车</p>
+														<a href="/cart.do" class="button" target="_blank" name="go_to_cart_1_8">查看购物车</a> </div>
+										</div>
+								</li>
+								<li> <a href="#" name="floor_goods_img_1_26" target="_blank"><img class="lazy" data-original="img/new3.png" src="img/new3.png" style="display: block;"></a> <a href="/goods-26.html" name="floor_goods_name_1_26" target="_blank">
+										<h6>平安夜</h6>
+										</a> <a href="#" name="floor_goods_description_1_26" target="_blank">
+										<p>一层新雪下，肉桂与松子香气弥散开来</p>
+										</a>
+										<div class="tag-list"> <a href="#" target="_blank" name="goods_tag_1_17">情侣 &gt;</a><a href="" target="_blank" name="goods_tag_1_22">聚会 &gt;</a><a href="#" target="_blank" name="goods_tag_1_30">新品 &gt;</a></div>
+										<div class="cart-info"> <span class="spec">¥328.00/2.0磅</span> <a href="javascript:void(0);" class="add-cart" name="add_cart_1_26" data-id="26">加入购物车</a> </div>
+										<div class="spec-detail">
+												<div class="spec-title">￥36.0/份</div>
+												<div class="spec-info"> </div>
+												<div class="buttons">
+														<div class="button left buy-now" data-id="26" name="buy_now_1_26">立即购买</div>
+														<div class="button coffee right add-to-cart" data-id="26" name="add_to_cart_1_26">加入购物车</div>
+												</div>
+										</div>
+										<div class="addcart-success">
+												<div>
+														<p><i></i>成功添加购物车</p>
+														<a href="/cart.do" class="button" target="_blank" name="go_to_cart_1_26">查看购物车</a> </div>
+										</div>
+								</li>
+								<li> <a href="/gallery/tag/51.html" name="floor_goods_img_1_907" target="_blank"><img class="lazy" data-original="img/new4.png" src="img/new4.png" style="display: block;"></a> <a href="#" name="floor_goods_name_1_907" target="_blank">
+										<h6>小重组</h6>
+										</a> <a href="#l" name="floor_goods_description_1_907" target="_blank">
+										<p>均一，轻褐的千层酥，三种“重组可能”</p>
+										</a>
+										<div class="tag-list"> <a href="#" target="_blank" name="goods_tag_1_17">情侣 &gt;</a><a href="#" target="_blank" name="goods_tag_1_30">新品 &gt;</a><a href="#" target="_blank" name="goods_tag_1_22">聚会 &gt;</a></div>
+										<div class="cart-info"> <span class="spec">¥298.00/160g</span> <a href="javascript:void(0);" class="add-cart" name="add_cart_1_907" data-id="907">加入购物车</a> </div>
+										<div class="spec-detail">
+												<div class="spec-title">￥36.0/份</div>
+												<div class="spec-info"> </div>
+												<div class="buttons">
+														<div class="button left buy-now" data-id="907" name="buy_now_1_907">立即购买</div>
+														<div class="button coffee right add-to-cart" data-id="907" name="add_to_cart_1_907">加入购物车</div>
+												</div>
+										</div>
+										<div class="addcart-success">
+												<div>
+														<p><i></i>成功添加购物车</p>
+														<a href="/cart.do" class="button" target="_blank" name="go_to_cart_1_907">查看购物车</a> </div>
+										</div>
+								</li>
+						</ul>
+				</div>
+				<div class="home-left-button home-button" name="floor_left_button_1"></div>
+				<div class="home-right-button home-button" name="floor_right_button_1"></div>
+		</div>
+</div>
+                 <div class="home-module home-colorful anchor" id="2">
+	<h4 class="home-module-title">生日<span>/</span><span>专区</span></h4>
+	<div class="colorful-top-banner anchor" id="3">
+		<a href="#" target="_blank" name="floor_banner_2"><img class="lazy" data-original="img/title2.jpg" src="img/title2.jpg" style="display: inline;"></a>
+	</div>
+	<div class="color-product-list">
+		<div class="list-box">
+			<ul>
+				<li><a href="#" name="floor_goods_img_2_12" target="_blank"><img class="lazy" data-original="img/birthday1.png" src="img/birthday1.png" style="display: block;"></a><a href="#" name="floor_goods_name_2_12" target="_blank">
+				<h6>百利甜情人</h6>
+				</a><a href="#" name="floor_goods_description_2_12" target="_blank">
+				<p>
+					新切的水果与刚折的玫瑰，甜美、渐浓
+				</p>
+				</a>
+				<div class="tag-list">
+					<a href="#" target="_blank" name="goods_tag_2_17">情侣 &gt;</a><a href="#" target="_blank" name="goods_tag_2_31">人气 &gt;</a>
+				</div>
+				<div class="cart-info">
+					<span class="spec">¥298.00/2.0磅</span><a href="#" class="add-cart" name="add_cart_2_12" data-id="12">加入购物车</a>
+				</div>
+				<div class="spec-detail">
+					<div class="spec-title">
+						￥36.0/份
+					</div>
+					<div class="spec-info">
+					</div>
+					<div class="buttons">
+						<div class="button left buy-now" data-id="12" name="buy_now_2_12">
+							立即购买
+						</div>
+						<div class="button coffee right add-to-cart" data-id="12" name="add_to_cart_2_12">
+							加入购物车
+						</div>
+					</div>
+				</div>
+				<div class="addcart-success">
+					<div>
+						<p>
+							<i></i>成功添加购物车
+						</p>
+						<a href="#" class="button" target="_blank" name="go_to_cart_2_12">查看购物车</a>
+					</div>
+				</div>
+				</li>
+				<li><a href="#" name="floor_goods_img_2_9" target="_blank"><img class="lazy" data-original="img/birthday2.png" src="img/birthday2.png" style="display: block;"></a><a href="#" name="floor_goods_name_2_9" target="_blank">
+				<h6>榴莲飘飘</h6>
+				</a><a href="#" name="floor_goods_description_2_9" target="_blank">
+				<p>
+					丰厚乳脂奶油，打入足量榴莲果肉
+				</p>
+				</a>
+				<div class="tag-list">
+					<a href="#" target="_blank" name="goods_tag_2_31">人气 &gt;</a><a href="#" target="_blank" name="goods_tag_2_44">生日 &gt;</a>
+				</div>
+				<div class="cart-info">
+					<span class="spec">¥298.00/2.0磅</span><a href="#" class="add-cart" name="add_cart_2_9" data-id="9">加入购物车</a>
+				</div>
+				<div class="spec-detail">
+					<div class="spec-title">
+						￥36.0/份
+					</div>
+					<div class="spec-info">
+					</div>
+					<div class="buttons">
+						<div class="button left buy-now" data-id="9" name="buy_now_2_9">
+							立即购买
+						</div>
+						<div class="button coffee right add-to-cart" data-id="9" name="add_to_cart_2_9">
+							加入购物车
+						</div>
+					</div>
+				</div>
+				<div class="addcart-success">
+					<div>
+						<p>
+							<i></i>成功添加购物车
+						</p>
+						<a href="#" class="button" target="_blank" name="go_to_cart_2_9">查看购物车</a>
+					</div>
+				</div>
+				</li>
+				<li><a href="#" name="floor_goods_img_2_702" target="_blank"><img class="lazy" data-original="img/birthday3.png" src="img/birthday3.png" style="display: block;"></a><a href="#" name="floor_goods_name_2_702" target="_blank">
+				<h6> 黑白巧克力慕斯 彼尔德（生日）</h6>
+				</a><a href="#" name="floor_goods_description_2_702" target="_blank">
+				<p>
+					卡通定制撒粉，简单、柔软
+				</p>
+				</a>
+				<div class="tag-list">
+					<a href="#" target="_blank" name="goods_tag_2_30">新品 &gt;</a><a href="#" target="_blank" name="goods_tag_2_44">生日 &gt;</a>
+				</div>
+				<div class="cart-info">
+					<span class="spec">¥298.00/2.0磅</span><a href="#" class="add-cart" name="add_cart_2_702" data-id="702">加入购物车</a>
+				</div>
+				<div class="spec-detail">
+					<div class="spec-title">
+						￥36.0/份
+					</div>
+					<div class="spec-info">
+					</div>
+					<div class="buttons">
+						<div class="button left buy-now" data-id="702" name="buy_now_2_702">
+							立即购买
+						</div>
+						<div class="button coffee right add-to-cart" data-id="702" name="add_to_cart_2_702">
+							加入购物车
+						</div>
+					</div>
+				</div>
+				<div class="addcart-success">
+					<div>
+						<p>
+							<i></i>成功添加购物车
+						</p>
+						<a href="#" class="button" target="_blank" name="go_to_cart_2_702">查看购物车</a>
+					</div>
+				</div>
+				</li>
+				<li><a href="#" name="floor_goods_img_2_631" target="_blank"><img class="lazy" data-original="img/birthday1.png4" src="img/birthday4.png" style="display: block;"></a><a href="#" name="floor_goods_name_2_631" target="_blank">
+				<h6>枣儿</h6>
+				</a><a href="#" name="floor_goods_description_2_631" target="_blank">
+				<p>
+					红枣奶油戚风，与姜撞奶慕斯
+				</p>
+				</a>
+				<div class="tag-list">
+					<a href="#" target="_blank" name="goods_tag_2_30">新品 &gt;</a><a href="#" target="_blank" name="goods_tag_2_44">生日 &gt;</a>
+				</div>
+				<div class="cart-info">
+					<span class="spec">¥298.00/2.0磅</span><a href="#" class="add-cart" name="add_cart_2_631" data-id="631">加入购物车</a>
+				</div>
+				<div class="spec-detail">
+					<div class="spec-title">
+						￥36.0/份
+					</div>
+					<div class="spec-info">
+					</div>
+					<div class="buttons">
+						<div class="button left buy-now" data-id="631" name="buy_now_2_631">
+							立即购买
+						</div>
+						<div class="button coffee right add-to-cart" data-id="631" name="add_to_cart_2_631">
+							加入购物车
+						</div>
+					</div>
+				</div>
+				<div class="addcart-success">
+					<div>
+						<p>
+							<i></i>成功添加购物车
+						</p>
+						<a href="#" class="button" target="_blank" name="go_to_cart_2_631">查看购物车</a>
+					</div>
+				</div>
+				</li>
+			</ul>
+		</div>
+		<div class="home-left-button home-button" name="floor_left_button_2">
+		</div>
+		<div class="home-right-button home-button" name="floor_right_button_2">
+		</div>
+	</div>
+</div>   
+                  <div class="home-module home-colorful anchor" id="5">
+	<h4 class="home-module-title">聚会<span>/</span><span>专区</span></h4>
+	<div class="colorful-top-banner">
+		<a href="#" target="_blank" name="floor_banner_4"><img class="lazy" data-original="img/title3.jpg" src="img/title3.jpg" style="display: inline;"></a>
+	</div>
+	<div class="color-product-list">
+		<div class="list-box">
+			<ul>
+				<li><a href="#" name="floor_goods_img_4_487" target="_blank"><img class="lazy" data-original="img/party1.png" src="img/party1.png" style="display: block;"></a><a href="#" name="floor_goods_name_4_487" target="_blank">
+				<h6> 6口味切块</h6>
+				</a><a href="#" name="floor_goods_description_4_487" target="_blank">
+				<p>
+					多口味，精装小份
+				</p>
+				</a>
+				<div class="tag-list">
+					<a href="#" target="_blank" name="goods_tag_4_22">聚会 &gt;</a><a href="#" target="_blank" name="goods_tag_4_30">新品 &gt;</a><a href="#" target="_blank" name="goods_tag_4_31">人气 &gt;</a>
+				</div>
+				<div class="cart-info">
+					<span class="spec">¥198.00/6个（6种口味）</span><a href="#" class="add-cart" name="add_cart_4_487" data-id="487">加入购物车</a>
+				</div>
+				<div class="spec-detail">
+					<div class="spec-title">
+						￥36.0/份
+					</div>
+					<div class="spec-info">
+					</div>
+					<div class="buttons">
+						<div class="button left buy-now" data-id="487" name="buy_now_4_487">
+							立即购买
+						</div>
+						<div class="button coffee right add-to-cart" data-id="487" name="add_to_cart_4_487">
+							加入购物车
+						</div>
+					</div>
+				</div>
+				<div class="addcart-success">
+					<div>
+						<p>
+							<i></i>成功添加购物车
+						</p>
+						<a href="#" class="button" target="_blank" name="go_to_cart_4_487">查看购物车</a>
+					</div>
+				</div>
+				</li>
+				<li><a href="#" name="floor_goods_img_4_17" target="_blank"><img class="lazy" data-original="img/party2.png" src="img/party2.png" style="display: block;"></a><a href="#" name="floor_goods_name_4_17" target="_blank">
+				<h6>黑白巧克力慕斯</h6>
+				</a><a href="#" name="floor_goods_description_4_17" target="_blank">
+				<p>
+					白巧克力慕斯的甜，与黑巧克力酱的苦
+				</p>
+				</a>
+				<div class="tag-list">
+					<a href="#" target="_blank" name="goods_tag_4_22">聚会 &gt;</a><a href="#" target="_blank" name="goods_tag_4_44">生日 &gt;</a><a href="#" target="_blank" name="goods_tag_4_31">人气 &gt;</a>
+				</div>
+				<div class="cart-info">
+					<span class="spec">¥298.00/2.0磅</span><a href="#" class="add-cart" name="add_cart_4_17" data-id="17">加入购物车</a>
+				</div>
+				<div class="spec-detail">
+					<div class="spec-title">
+						￥36.0/份
+					</div>
+					<div class="spec-info">
+					</div>
+					<div class="buttons">
+						<div class="button left buy-now" data-id="17" name="buy_now_4_17">
+							立即购买
+						</div>
+						<div class="button coffee right add-to-cart" data-id="17" name="add_to_cart_4_17">
+							加入购物车
+						</div>
+					</div>
+				</div>
+				<div class="addcart-success">
+					<div>
+						<p>
+							<i></i>成功添加购物车
+						</p>
+						<a href="#" class="button" target="_blank" name="go_to_cart_4_17">查看购物车</a>
+					</div>
+				</div>
+				</li>
+				<li><a href="#" name="floor_goods_img_4_1" target="_blank"><img class="lazy" data-original="img/party3.png" src="img/party3.png" style="display: block;"></a><a href="#" name="floor_goods_name_4_1" target="_blank">
+				<h6>朗姆芝士</h6>
+				</a><a href="#" name="floor_goods_description_4_1" target="_blank">
+				<p>
+					清香柠檬与乳酪夹心，微苦、微醺
+				</p>
+				</a>
+				<div class="tag-list">
+					<a href="#" target="_blank" name="goods_tag_4_17">情侣 &gt;</a><a href="#" target="_blank" name="goods_tag_4_37">白色情人节 &gt;</a>
+				</div>
+				<div class="cart-info">
+					<span class="spec">¥298.00/2.0磅</span><a href="#" class="add-cart" name="add_cart_4_1" data-id="1">加入购物车</a>
+				</div>
+				<div class="spec-detail">
+					<div class="spec-title">
+						￥36.0/份
+					</div>
+					<div class="spec-info">
+					</div>
+					<div class="buttons">
+						<div class="button left buy-now" data-id="1" name="buy_now_4_1">
+							立即购买
+						</div>
+						<div class="button coffee right add-to-cart" data-id="1" name="add_to_cart_4_1">
+							加入购物车
+						</div>
+					</div>
+				</div>
+				<div class="addcart-success">
+					<div>
+						<p>
+							<i></i>成功添加购物车
+						</p>
+						<a href="#" class="button" target="_blank" name="go_to_cart_4_1">查看购物车</a>
+					</div>
+				</div>
+				</li>
+				<li><a href="#" name="floor_goods_img_4_31" target="_blank"><img class="lazy" data-original="img/party4.png" src="img/party4.png" style="display: block;"></a><a href="#" name="floor_goods_name_4_31" target="_blank">
+				<h6>冻慕斯与焗芝士</h6>
+				</a><a href="#" name="floor_goods_description_4_31" target="_blank">
+				<p>
+					马斯卡彭慕斯，叠加法国软芝士
+				</p>
+				</a>
+				<div class="tag-list">
+					<a href="#" target="_blank" name="goods_tag_4_17">情侣 &gt;</a><a href="#" target="_blank" name="goods_tag_4_29">低温 &gt;</a><a href="#" target="_blank" name="goods_tag_4_44">生日 &gt;</a>
+				</div>
+				<div class="cart-info">
+					<span class="spec">¥298.00/2.0磅</span><a href="#" class="add-cart" name="add_cart_4_31" data-id="31">加入购物车</a>
+				</div>
+				<div class="spec-detail">
+					<div class="spec-title">
+						￥36.0/份
+					</div>
+					<div class="spec-info">
+					</div>
+					<div class="buttons">
+						<div class="button left buy-now" data-id="31" name="buy_now_4_31">
+							立即购买
+						</div>
+						<div class="button coffee right add-to-cart" data-id="31" name="add_to_cart_4_31">
+							加入购物车
+						</div>
+					</div>
+				</div>
+				<div class="addcart-success">
+					<div>
+						<p>
+							<i></i>成功添加购物车
+						</p>
+						<a href="#" class="button" target="_blank" name="go_to_cart_4_31">查看购物车</a>
+					</div>
+				</div>
+				</li>
+			</ul>
+		</div>
+		<div class="home-left-button home-button" name="floor_left_button_4">
+		</div>
+		<div class="home-right-button home-button" name="floor_right_button_4">
+		</div>
+	</div>
+</div>  
+                 <div class="home-module home-s_activity anchor" id="6">
+	<h4 class="home-module-title">活动门<span>/</span><span>是被吸引了吧</span></h4>
+	<ul class="home-s_activity-content">
+		<li>
+			<a href="#" target="_blank" name="activity_">
+				<img class="lazy" data-original="img/door.jpg" src="img/door.jpg" alt="新客专享" style="display: block;">
+			</a>
+		</li>
+	</ul>
+</div>   
+            <div class="home-module home-magazine anchor" id="7">
+	<h4 class="home-module-title">廿一客<span>/</span><span>文章</span><a href="#" target="_blank">查看更多&nbsp;&gt;</a></h4>
+	<ul class="home-magazine-content">
+		<li><a href="#" target="_blank" name="community_232"><img class="lazy" data-original="img/cake1.jpg" src="img/cake1.jpg" alt="冬季刊·进博会" style="display: inline;">
+		<h4>冬季刊·进博会</h4>
+		<p>
+			<span></span><span>阅读全文 &gt;&gt;</span>
+		</p>
+		</a></li>
+		<li><a href="#" target="_blank" name="community_208"><img class="lazy" data-original="img/cake2.jpg" src="img/cake2.jpg" alt="廿一志秋刊·客服Q&amp;A" style="display: inline;">
+		<h4>廿一志秋刊·客服Q&amp;A</h4>
+		<p>
+			<span></span><span>阅读全文 &gt;&gt;</span>
+		</p>
+		</a></li>
+	</ul>
+</div>        
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+        </div>
+		<div class="layer-shade"></div>
+
+
+<!--底部-->
+<div class="footer">
+    <img class="footer-logo" src="img/footer-logo.png" height="36" width="96" alt="">
+    <!--底部导航-->
+    <div class="footer-nav">
+        <a href="#">联系我们</a>
+        <span>|</span>
+        <a href="#">订购帮助</a>
+        <span>|</span>
+        <a href="#">企业合作</a>
+        <span>|</span>
+        <a href="#">生产经营资质</a>
+        <span>|</span>
+        <a href="#">公告专区</a>
+    </div>
+    <!--底部图标-->
+    <div class="footer-icon">
+	        <a href="#" target="_blank">
+	            <img src="img/footericon-01.png">
+	        </a>
+	        <a class="footer-weixin">
+	            <div class="footer-erweima footer-weixin-erweima">
+	                <img src="img/erweima.png">
+	            </div>
+	            <img src="img/weixin-icon.png">
+	        </a>
+	        <a class="footer-app">
+	            <div class="footer-erweima footer-app-erweima">
+	                <img src="img/appma.png">
+	            </div>
+	            APP
+	        </a>
+    </div>
+    <script type="text/javascript">
+    $(".footer-weixin").hover(function(){
+        $('.footer-weixin-erweima').show().find('img').animate({top:0}, 200);
+    },function(){
+        $('.footer-weixin-erweima').hide().find('img').css('top','100%');
+    });
+     $(".footer-app").hover(function(){
+        $('.footer-app-erweima').show().find('img').animate({top:0}, 200);
+    },function(){
+        $('.footer-app-erweima').hide().find('img').css('top','100%');
+    })
+    $(document).ready(function(){
+        $('div[id*="xunlei_com"]').remove();
+        $('#jcps').remove();
+    });
+     
+</script>
+    <!--简介-->
+    <div class="footer-text">
+        <span>订购专线：400 650 2121（服务时间 08:00–22:00）</span>
+        <span>客服电话：021-23099721（全国） | kefu@21cake.com（邮箱）</span>
+        <span>杭州/广州：提前5小时预订；北京：提前6小时预订；上海：提前5.5-6小时预订；天津/苏州/无锡/深圳：提前8小时预订（部分偏远地区除外，当日22点以后订单，于次日8点开始审核） </span>
+        <span>当日蛋糕配送截止下单时间：北京：16:50；上海：16:30；杭州/广州：13:50；天津：10:30；苏州/无锡/深圳：11:00</span>
+        <span>网站注册公司名称: 北京廿一客食品有限公司 地址: 北京市北京经济技术开发区兴海二街5号院3号楼 </span>
+    </div>
+    <!--备案-->
+    <div class="footer-copyright">
+        <span>Copyright© 21Cake蛋糕官网商城 2007-2018, 版权所有 <a style="color: #9a9a9a" href="#">京ICP备14006254号-1</a></span>
+    </div>
+</div>
+ <script>
+        
+        Global.homeAdModule = '{"0":"home_floor","1":"activity","2":"magazine"}';
+         list = JSON.parse('{"title":"\u9996\u9875Banner","template":"sliders","data":[{"name":"\u8349\u8393\u5976\u6cb9\u86cb\u7cd5","href":"#","target":"_self","img_url":"\/upload\/img\/lunbo1.jpg","sort":1,"special_effects":"fadeIn"},{"name":"\u575a\u679c\u6696\u5fc3\u6d3b\u52a8","href":"#","target":"_self","img_url":"\/upload\/img\/lunbo2.jpg","sort":2,"special_effects":"fadeIn"},{"name":"\u5e73\u5b89\u591c","href":"#","target":"_self","img_url":"\/upload\/img\/lunbo3.jpg","sort":3,"special_effects":"fadeIn"}]}');
+        
+    </script>
+ <script src="js/main.js" type="text/javascript" ></script>
+    
+    
+<script type="text/javascript">
+    $('#slider').fade({
+        url: list.data,
+        boxHei: sliderHeight,
+        scale: 1,
+        home:true
+    });
+    
+</script>
+
+	</body>
+	
+</html>
